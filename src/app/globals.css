@@ -60,3 +60,102 @@ body {
   font-weight: normal;
   line-height: 1.55;
 }
+
+/* Faculty Images Convergence Animation */
+@keyframes converge-top-right {
+  0% {
+    transform: translate(300px, -200px) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes converge-top-left {
+  0% {
+    transform: translate(-300px, -200px) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes converge-bottom-left {
+  0% {
+    transform: translate(-300px, 200px) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes converge-bottom-right {
+  0% {
+    transform: translate(300px, 200px) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-early {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes with Staggered Timing */
+.animate-converge-top-right {
+  animation: converge-top-right 4s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.animate-converge-top-left {
+  animation: converge-top-left 4.5s ease-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.animate-converge-bottom-left {
+  animation: converge-bottom-left 5s ease-out forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+.animate-converge-bottom-right {
+  animation: converge-bottom-right 5.5s ease-out forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+
+.animate-fade-in-early {
+  animation: fade-in-early 1s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}

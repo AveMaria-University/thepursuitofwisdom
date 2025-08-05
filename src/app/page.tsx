@@ -36,59 +36,98 @@ export default function HomePage() {
         </nav>
       </header>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <div className="mb-6">
-              <p className="text-sm uppercase tracking-wide text-gray-600 mb-4">
-                NEW FROM AVE MARIA UNIVERSITY
-              </p>
-              <h2 className="text-6xl md:text-7xl font-bold font-crimson text-pursuit-navy leading-tight mb-6">
-                Calling Those Who Seek Wisdom
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Introducing The Pursuit of Wisdom, a series of short courses presented by the faculty of Ave
-                Maria University. Each professor will provide practical wisdom and insights around important
-                topics and themes to help you lead a more inspired, meaningful, and joyful life.
-              </p>
-              <div className="flex space-x-4">
-                <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                  SIGN UP
-                </button>
-                <button className="px-8 py-3 border-2 border-pursuit-gold text-pursuit-gold font-medium rounded hover:bg-pursuit-gold hover:text-white transition-colors">
-                  LOG IN
-                </button>
+      {/* Main Content - Hero Section - FULL VIEWPORT HEIGHT */}
+      <main className="bg-gray-100 py-8 min-h-screen flex items-center">
+        <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-16 w-full">
+          {/* HUGE White rounded container - MAXIMUM WIDTH */}
+          <div className="bg-white rounded-3xl shadow-lg p-20 lg:p-24 max-w-[95vw] mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center min-h-[900px]">
+              {/* Left Content */}
+              <div>
+                <div className="mb-8">
+                  <p className="text-lg uppercase tracking-wide text-gray-600 mb-8">
+                    NEW FROM AVE MARIA UNIVERSITY
+                  </p>
+                  <h2 className="text-6xl md:text-7xl lg:text-8xl font-bold font-crimson text-pursuit-navy leading-tight mb-10">
+                    Calling Those Who Seek Wisdom
+                  </h2>
+                  <p className="text-2xl text-gray-700 leading-relaxed mb-12">
+                    Introducing The Pursuit of Wisdom, a series of short courses presented by the faculty of Ave
+                    Maria University. Each professor will provide practical wisdom and insights around important
+                    topics and themes to help you lead a more inspired, meaningful, and joyful life.
+                  </p>
+                  <div className="flex space-x-6">
+                    <button className="px-12 py-5 bg-pursuit-gold text-white font-medium text-xl rounded-lg hover:bg-yellow-600 transition-colors">
+                      SIGN UP
+                    </button>
+                    <button className="px-12 py-5 border-2 border-pursuit-gold text-pursuit-gold font-medium text-xl rounded-lg hover:bg-pursuit-gold hover:text-white transition-colors">
+                      LOG IN
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          {/* Right Content - Faculty Images */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-4">
-              <div className="bg-gray-200 rounded-lg aspect-square">
-                {/* Placeholder for faculty image */}
-                <div className="w-full h-full bg-gray-300 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500">Faculty Image</span>
+              {/* Right Content - MASSIVE Faculty Images Grid with Convergence Animation */}
+              <div className="grid grid-cols-2 gap-6 h-[900px] relative">
+                {/* Left Column */}
+                <div className="flex flex-col gap-6">
+                  {/* Top Left - Janice Portrait - Arrives SECOND */}
+                  <div className="rounded-2xl overflow-hidden shadow-lg flex-1 animate-converge-top-left">
+                    <Image
+                      src="/images/JanicePort-Enhanced-SR.jpg"
+                      alt="Dr. Janice"
+                      width={500}
+                      height={700}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {/* Bottom Left - Dauphinais Portrait - Arrives THIRD */}
+                  <div className="rounded-2xl overflow-hidden shadow-lg flex-1 animate-converge-bottom-left">
+                    <Image
+                      src="/images/DauphinaisPort-Enhanced-SR.jpg"
+                      alt="Dr. Dauphinais"
+                      width={500}
+                      height={700}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="bg-gray-200 rounded-lg aspect-square">
-                {/* Placeholder for faculty image */}
-                <div className="w-full h-full bg-gray-300 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500">Faculty Image</span>
-                </div>
-              </div>
-            </div>
-            <div className="mt-8">
-              <div className="bg-gray-200 rounded-lg aspect-video relative">
-                {/* Placeholder for video */}
-                <div className="w-full h-full bg-gray-300 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
-                      <div className="w-0 h-0 border-l-8 border-l-pursuit-navy border-y-6 border-y-transparent ml-1"></div>
+
+                {/* Right Column */}
+                <div className="flex flex-col gap-6">
+                  {/* Top Right - Joseph Pearce - Arrives FIRST */}
+                  <div className="rounded-2xl overflow-hidden shadow-lg h-[280px] animate-converge-top-right">
+                    <Image
+                      src="/images/JosephPearceBCam-Enhanced-SR.jpg"
+                      alt="Joseph Pearce"
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  {/* Middle - Video Player Placeholder - APPEARS IMMEDIATELY */}
+                  <div className="bg-pursuit-navy rounded-2xl relative flex-1 shadow-lg min-h-[320px] animate-fade-in-early">
+                    <div className="w-full h-full flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <div className="w-24 h-24 bg-pursuit-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                          <div className="w-0 h-0 border-l-12 border-l-white border-y-10 border-y-transparent ml-1"></div>
+                        </div>
+                        <span className="font-semibold text-xl">WATCH THE TRAILER</span>
+                        <div className="text-sm text-gray-300 mt-2">Video Player</div>
+                      </div>
                     </div>
-                    <span className="text-white font-semibold">WATCH THE TRAILER</span>
+                  </div>
+                  
+                  {/* Bottom Right - Diann Portrait - Arrives FOURTH (LAST) */}
+                  <div className="rounded-2xl overflow-hidden shadow-lg h-[280px] animate-converge-bottom-right">
+                    <Image
+                      src="/images/DIannPort-Enhanced-SR.jpg"
+                      alt="Dr. Diann"
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
