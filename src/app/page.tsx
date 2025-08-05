@@ -252,147 +252,68 @@ export default function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Course 1: Dr. Gerald Boersma */}
-            <div className="text-center h-full flex flex-col">
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500">Dr. Boersma Image</span>
-                </div>
+            {/* Course 1: Dr. Saverio Perugini */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+              <div className="aspect-video bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">Dr. Perugini Image</span>
               </div>
-              <p className="text-sm text-pursuit-gold font-semibold mb-2">DR. GERALD BOERSMA</p>
-              <div className="h-4 mb-2"></div>
-              <h3 className="text-xl font-bold font-crimson text-pursuit-navy mb-4 h-16 flex items-center justify-center">
-                The Life and Teachings of St. Augustine
-              </h3>
-              <div className="mb-6 flex-grow flex flex-col justify-end">
-                <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-pursuit-gold h-2 rounded-full" style={{width: '28%'}}></div>
-                </div>
-                <p className="text-sm text-gray-600 mb-4">28% COMPLETE</p>
+              <div className="p-8 text-center flex-1 flex flex-col">
+                <p className="text-sm text-pursuit-gold font-semibold mb-4 uppercase tracking-wide">
+                  DR. SAVERIO PERUGINI
+                </p>
+                <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-6 leading-tight flex-1 flex items-center justify-center">
+                  An Introduction to Computer Science
+                </h3>
+                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
+                  PURSUE WISDOM
+                </button>
               </div>
-              <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                CONTINUE THIS COURSE
-              </button>
             </div>
 
-            {/* Course 2: Coach Joe Patterson */}
-            <div className="text-center h-full flex flex-col">
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500">Coach Patterson Image</span>
-                </div>
+            {/* Course 2: Dr. Gerald Boersma */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+              <div className="aspect-video bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">Dr. Boersma Image</span>
               </div>
-              <p className="text-sm text-pursuit-gold font-semibold mb-2">COACH JOE PATTERSON</p>
-              <div className="h-4 mb-2"></div>
-              <h3 className="text-xl font-bold font-crimson text-pursuit-navy mb-4 h-16 flex items-center justify-center">
-                Athletics and the Virtues
-              </h3>
-              <div className="mb-6 flex-grow flex flex-col justify-end">
-                <div className="h-6 mb-2"></div>
-                <p className="text-sm text-gray-600 mb-4">New Course</p>
+              <div className="p-8 text-center flex-1 flex flex-col">
+                <p className="text-sm text-pursuit-gold font-semibold mb-4 uppercase tracking-wide">
+                  DR. GERALD BOERSMA
+                </p>
+                <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-6 leading-tight flex-1 flex items-center justify-center">
+                  The Life and Teachings of St. Augustine
+                </h3>
+                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
+                  PURSUE WISDOM
+                </button>
               </div>
-              <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                ENROLL
-              </button>
             </div>
 
-            {/* Course 3: Dr. Seana McGuire */}
-            <div className="text-center h-full flex flex-col">
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500">Dr. McGuire Image</span>
-                </div>
+            {/* Course 3: Coach Joe Patterson */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+              <div className="aspect-video bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">Coach Patterson Image</span>
               </div>
-              <p className="text-sm text-pursuit-gold font-semibold mb-2">DR. SEANA MCGUIRE</p>
-              <p className="text-xs text-gray-500 mb-2 h-4">(SUGRUE)</p>
-              <h3 className="text-xl font-bold font-crimson text-pursuit-navy mb-4 h-16 flex items-center justify-center">
-                Pro-Life: Rights, Natural Law, and Catholic Thought
-              </h3>
-              <div className="mb-6 flex-grow flex flex-col justify-end">
-                <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-pursuit-gold h-2 rounded-full" style={{width: '0%'}}></div>
-                </div>
-                <p className="text-sm text-gray-600 mb-4">0% COMPLETE</p>
+              <div className="p-8 text-center flex-1 flex flex-col">
+                <p className="text-sm text-pursuit-gold font-semibold mb-4 uppercase tracking-wide">
+                  COACH JOE PATTERSON
+                </p>
+                <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-6 leading-tight flex-1 flex items-center justify-center">
+                  Athletics and the Virtues
+                </h3>
+                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
+                  PURSUE WISDOM
+                </button>
               </div>
-              <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                CONTINUE THIS COURSE
-              </button>
             </div>
           </div>
 
-          {/* Second Row of Courses */}
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {/* Course 4: Dr. Michael Breidenbach */}
-            <div className="text-center h-full flex flex-col">
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500">Dr. Breidenbach Image</span>
-                </div>
-              </div>
-              <p className="text-sm text-pursuit-gold font-semibold mb-2">DR. MICHAEL BREIDENBACH</p>
-              <div className="h-4 mb-2"></div>
-              <h3 className="text-xl font-bold font-crimson text-pursuit-navy mb-4 h-16 flex items-center justify-center">
-                The Rise of American Politics
-              </h3>
-              <div className="mb-6 flex-grow flex flex-col justify-end">
-                <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
-                  <div className="bg-pursuit-gold h-2 rounded-full" style={{width: '33%'}}></div>
-                </div>
-                <p className="text-sm text-gray-600 mb-4">33% COMPLETE</p>
-              </div>
-              <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                CONTINUE THIS COURSE
-              </button>
-            </div>
-
-            {/* Course 5: Dr. Diann Ecret */}
-            <div className="text-center h-full flex flex-col">
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500">Dr. Ecret Image</span>
-                </div>
-              </div>
-              <p className="text-sm text-pursuit-gold font-semibold mb-2">DR. DIANN ECRET</p>
-              <div className="h-4 mb-2"></div>
-              <h3 className="text-xl font-bold font-crimson text-pursuit-navy mb-4 h-16 flex items-center justify-center">
-                Catholic Bioethics: Current Issues
-              </h3>
-              <div className="mb-6 flex-grow flex flex-col justify-end">
-                <div className="h-6 mb-2"></div>
-                <p className="text-sm text-gray-600 mb-4">New Course</p>
-              </div>
-              <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                ENROLL
-              </button>
-            </div>
-
-            {/* Course 6: Dr. Saverio Perugini */}
-            <div className="text-center h-full flex flex-col">
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                  <span className="text-gray-500">Dr. Perugini Image</span>
-                </div>
-              </div>
-              <p className="text-sm text-pursuit-gold font-semibold mb-2">DR. SAVERIO PERUGINI</p>
-              <div className="h-4 mb-2"></div>
-              <h3 className="text-xl font-bold font-crimson text-pursuit-navy mb-4 h-16 flex items-center justify-center">
-                An Introduction to Computer Science
-              </h3>
-              <div className="mb-6 flex-grow flex flex-col justify-end">
-                <div className="h-6 mb-2"></div>
-                <p className="text-sm text-gray-600 mb-4">New Course</p>
-              </div>
-              <button className="px-8 py-3 bg-pursuit-gold text-white font-medium rounded hover:bg-yellow-600 transition-colors">
-                ENROLL
-              </button>
-            </div>
-          </div>
-
-          {/* Load More Button */}
+          {/* See All Courses Button */}
           <div className="text-center mt-16">
-            <button className="px-12 py-4 border-2 border-pursuit-gold text-pursuit-gold font-medium rounded hover:bg-pursuit-gold hover:text-white transition-colors">
-              LOAD MORE
-            </button>
+            <Link href="/courses">
+              <button className="px-12 py-4 border-2 border-pursuit-gold text-pursuit-gold font-semibold text-lg rounded-lg hover:bg-pursuit-gold hover:text-white transition-colors">
+                SEE ALL COURSES
+              </button>
+            </Link>
           </div>
         </div>
       </section>
