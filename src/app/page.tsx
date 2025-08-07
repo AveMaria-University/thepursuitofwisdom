@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import DropboxVideo from '@/components/DropboxVideo'
 
 export default function HomePage() {
   return (
@@ -106,17 +107,14 @@ export default function HomePage() {
                     />
                   </div>
                   
-                  {/* Middle - Video Player Placeholder - APPEARS IMMEDIATELY */}
-                  <div className="bg-pursuit-navy rounded-2xl relative flex-1 shadow-lg min-h-[320px] animate-fade-in-early">
-                    <div className="w-full h-full flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <div className="w-24 h-24 bg-pursuit-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                          <div className="w-0 h-0 border-l-12 border-l-white border-y-10 border-y-transparent ml-1"></div>
-                        </div>
-                        <span className="font-semibold text-xl">WATCH THE TRAILER</span>
-                        <div className="text-sm text-gray-300 mt-2">Video Player</div>
-                      </div>
-                    </div>
+                  {/* Middle - Video Player - APPEARS IMMEDIATELY */}
+                  <div className="rounded-2xl relative flex-1 shadow-lg min-h-[320px] animate-fade-in-early overflow-hidden">
+                    <DropboxVideo 
+                      dropboxUrl="https://www.dropbox.com/scl/fi/bq2brlmgw62lrye5fzwvn/Saverio-Course-1-bryan.mp4?rlkey=dx45wio9o5rbel39819s42ovt&st=nd1ew6qe&dl=0"
+                      title="Watch the Trailer"
+                      className="w-full h-full"
+                      thumbnailUrl="/images/JosephPearceBCam-Enhanced-SR.jpg"
+                    />
                   </div>
                   
                   {/* Bottom Right - Diann Portrait - Arrives FOURTH (LAST) */}
