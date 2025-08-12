@@ -15,12 +15,12 @@ export default function LessonsList({ sections, courseTitle }: Props) {
     <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-gray-200 overflow-hidden">
       {sections.map((s, idx) => {
         const isLast = idx === sections.length - 1;
-        const clickable = !!s.videoUrl;
+    const clickable = !!s.videoUrl;
         return (
           <div
             key={s.order}
-            className={`grid grid-cols-12 gap-6 px-6 md:px-10 py-8 relative ${!isLast ? 'border-b border-gray-200' : ''} hover:bg-white transition-colors ${clickable ? 'cursor-pointer' : ''}`}
-            onClick={() => clickable && setActiveVideo(s.videoUrl || null)}
+      className={`grid grid-cols-12 gap-6 px-6 md:px-10 py-8 relative ${!isLast ? 'border-b border-gray-200' : ''} hover:bg-white transition-colors ${clickable ? 'cursor-pointer' : ''}`}
+      onClick={() => clickable && setActiveVideo(s.videoUrl || null)}
           >
             <div className="col-span-2 md:col-span-1 flex">
               <span className="text-pursuit-gold font-semibold text-xl md:text-2xl leading-none self-start pt-1">{String(s.order).padStart(2,'0')}</span>
@@ -38,8 +38,29 @@ export default function LessonsList({ sections, courseTitle }: Props) {
                 {s.duration && <span>{s.duration}</span>}
               </div>
             </div>
-            <div className="hidden md:flex col-span-3 items-center justify-end text-sm text-pursuit-gold font-medium">
+            <div className="hidden md:flex col-span-3 items-center justify-end space-x-3 text-sm text-pursuit-gold font-medium">
               {clickable && <span className="opacity-60 group-hover:opacity-100 transition-opacity">Play ▸</span>}
+              {!clickable && s.type === 'reading' && s.resourceUrl && (
+                <>
+                  <a
+                    href={s.resourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-pursuit-navy text-white px-4 py-2 rounded shadow hover:bg-pursuit-gold transition-colors text-xs whitespace-nowrap"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    VIEW PDF
+                  </a>
+                  <a
+                    href={s.resourceUrl}
+                    download
+                    className="bg-pursuit-gold text-white px-4 py-2 rounded shadow hover:bg-yellow-600 transition-colors text-xs whitespace-nowrap"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    DOWNLOAD
+                  </a>
+                </>
+              )}
             </div>
           </div>
         );

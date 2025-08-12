@@ -9,6 +9,7 @@ export interface CourseSection {
 	type?: 'video' | 'reading' | 'quiz' | 'discussion';
 	completed?: boolean; // future state flag
 	videoUrl?: string; // Dropbox link for video lessons
+	resourceUrl?: string; // static asset (PDF, etc.)
 }
 
 export interface Course {
@@ -54,7 +55,23 @@ export const courses: Course[] = [
 	{ id: 2, slug: 'athletics-and-the-virtues', image: '/images/patterson-course.jpg', professor: 'COACH JOE PATTERSON', professorDisplay: 'Coach Joe Patterson', title: 'Athletics and the Virtues' },
 	{ id: 3, slug: 'pro-life-rights-natural-law-and-catholic-thought', image: '/images/McGuire-course.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'Pro-life: Rights Natural Law, and Catholic Thought' },
 	{ id: 4, slug: 'rise-of-american-politics', image: '/images/Michael-course.jpg', professor: 'DR. MICHAEL BREIDENBACH', professorDisplay: 'Dr. Michael Breidenbach', title: 'The Rise of American Politics' },
-	{ id: 5, slug: 'catholic-bioethics-current-issues', image: '/images/DIann-course.jpg', professor: 'DR. DIANN ECRET', professorDisplay: 'Dr. Diann Ecret', title: 'Catholic Bioethics: Current Issues' },
+	{
+		id: 5,
+		slug: 'catholic-bioethics-current-issues',
+		image: '/images/DIann-course.jpg',
+		professor: 'DR. DIANN ECRET',
+		professorDisplay: 'Dr. Diann Ecret',
+		title: 'Catholic Bioethics: Current Issues',
+		description: `Catholic Bioethics: Current Issues\n\nJourney into an illuminating exploration of faith and vocation with Dr. DiAnn Ecret in her enlightening online course, “Catholic Bioethics: Current Issues.” Artfully combining insights from her 30-year nursing and healthcare career, Dr. Ecret delves into the essence of what it means to embody Christ’s compassion, particularly in caring for the vulnerable and sick. This course tackles the vital concern of moral decision making in an increasingly secularized nursing landscape, guided by the timeless wisdom of the Gospel.\n\nJoin Dr. Ecret as she shares her invaluable experiences, offering a unique understanding of what it truly means to embrace a Catholic identity in the healthcare field, while serving as a beacon of Christ-like compassion.`,
+		sections: [
+			{ order: 1, title: 'The Call to Serve the Sick', summary: 'Answering the vocation to care for the vulnerable.', duration: '25:49', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/qsibbwio3k1p1sfxxxkav/DE-Course-1-Bryan.mp4?rlkey=g6q6z8d7sff0onmdb458bg73g&st=zxef6672&dl=0' },
+			{ order: 2, title: 'Prenatal Diagnosis', summary: 'Moral discernment and challenges in prenatal contexts.', duration: '42:01', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/57os8lip0aprflte949jq/DE-Course-2-Bryan.mp4?rlkey=2lhejlel2ieqwo0cvyk2n9qtt&st=vqy6la3h&dl=0' },
+			{ order: 3, title: 'The Certainty of Human Life', summary: 'Dignity and inviolability of human life.', duration: '24:19', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/op1gazkuq4fi4hh07pqli/DE-Course-3-Bryan.mp4?rlkey=0t60jzhd4hf6kvj1mourr0wx5&st=bcl0jrwq&dl=0' },
+			{ order: 4, title: 'Outline and Additional Resources', summary: 'Catholic Bioethics Guidebook.', type: 'reading', resourceUrl: '/courses/catholic-bioethics-current-issues/guide.pdf' }
+		],
+		presenterBio: 'Dr. DiAnn Ecret, an alumnus of Our Lady of Lourdes School of Nursing, Wilmington University, and Villanova University, completed her Ph.D. in healthcare ethics at Duquesne University. With 37 years of diverse clinical nursing experience, and over two decades in nursing management and education, Dr. Ecret currently teaches at Ave Maria University and serves as a part-time ethicist at the National Catholic Bioethics Center.\n\nShe plays a crucial role in Ave Maria University\'s Institutional Review Board (IRB) committee and serves as an ethics consultant for Be Not Afraid, in addition to her work with Life Perspectives\' Health Care Task Force. Happily married for 35 years, Dr. Ecret and her husband, Michael, are parents to four children and grandparents to four.',
+		presenterImage: '/images/DIannPort-Enhanced-SR.jpg'
+	},
 	{ id: 6, slug: 'introduction-to-computer-science', image: '/images/Saverio-course.jpg', professor: 'DR. SAVERIO PERUGINI', professorDisplay: 'Dr. Saverio Perugini', title: 'An Introduction to Computer Science' },
 	{ id: 7, slug: 'introduction-to-mariology', image: '/images/mark-course.jpg', professor: 'DR. MARK MIRAVALLE', professorDisplay: 'Dr. Mark Miravalle', title: 'Introduction to Mariology' },
 	{ id: 8, slug: 'introduction-to-sacramental-theology', image: '/images/Roger-course.jpg', professor: 'DR. ROGER NUTT', professorDisplay: 'Dr. Roger Nutt', title: 'Introduction to Sacramental Theology' },

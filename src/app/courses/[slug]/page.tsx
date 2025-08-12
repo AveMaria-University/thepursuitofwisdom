@@ -42,7 +42,7 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 						<div>
 							<h1 className="font-crimson font-bold text-4xl md:text-5xl leading-tight mb-6">{course.professorDisplay || course.professor}</h1>
 							<p className="text-pursuit-gold font-semibold mb-8 text-lg md:text-xl max-w-xl">{course.title}</p>
-							<button className="bg-pursuit-gold text-white px-10 py-4 rounded text-sm tracking-widest font-semibold shadow hover:bg-yellow-600 transition-colors">CONTINUE THIS COURSE</button>
+							<Link href="/courses" className="inline-block bg-pursuit-gold text-white px-10 py-4 rounded text-sm tracking-widest font-semibold shadow hover:bg-yellow-600 transition-colors">BACK TO ALL COURSES</Link>
 						</div>
 						<div className="justify-self-center md:justify-self-end">
 							<div className="bg-white rounded-lg shadow-xl p-2 md:p-4 w-[340px] md:w-[360px]">
@@ -71,18 +71,30 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 								className="w-full aspect-video rounded-xl overflow-hidden"
 							/>
 						) : (
-							<div className="w-full aspect-video bg-pursuit-navy/90 rounded-xl flex items-center justify-center text-white">Trailer coming soon</div>
+							<div className="w-full rounded-xl border border-pursuit-navy/20 bg-gradient-to-br from-pursuit-navy/95 via-pursuit-navy/90 to-pursuit-navy/80 p-8 md:p-12 text-white">
+								{(!course.description || !course.description.startsWith(course.title)) && (
+									<h2 className="font-crimson font-bold text-3xl md:text-4xl mb-6">{course.title}</h2>
+								)}
+								{course.description && (
+									<p className="text-sm md:text-base leading-relaxed whitespace-pre-line text-gray-200 mb-8">{course.description}</p>
+								)}
+								<Link href="#program" className="inline-block">
+									<button className="bg-pursuit-gold text-white hover:bg-yellow-600 transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
+								</Link>
+							</div>
 						)}
 					</div>
-					<div className="relative z-10 max-w-5xl mx-auto mt-10 space-y-6">
-						<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
-						{course.description && <p className="text-gray-700 text-base leading-relaxed">{course.description}</p>}
-						<div className="pt-2">
-							<Link href="#program" className="inline-block">
-								<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
-							</Link>
+					{course.trailerUrl && (
+						<div className="relative z-10 max-w-5xl mx-auto mt-10 space-y-6">
+							<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
+							{course.description && <p className="text-gray-700 text-base leading-relaxed">{course.description}</p>}
+							<div className="pt-2">
+								<Link href="#program" className="inline-block">
+									<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
+								</Link>
+							</div>
 						</div>
-					</div>
+					)}
 				</div>
 
 				{/* Program Outline / Lessons */}
