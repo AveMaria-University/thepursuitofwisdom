@@ -65,7 +65,7 @@ export const courses: Course[] = [
 		professor: 'COACH JOE PATTERSON',
 		professorDisplay: 'Coach Joe Patterson',
 		title: 'Athletics and the Virtues',
-		description: `Athletics and the Virtues\n\nJoin Coach Joe Patterson in his course, "Athletics and The Virtues", as he explores how sport and the spiritual life can either help or hinder our journey to holiness. Over the last 27 years of coaching (as well as directing athletics at Ave Maria University since 2020), Patterson has worked with thousands of athletes to help them grow as sons and daughters of God AND champions in their sport. As an added bonus, Coach Patterson is joined by coaches from Ave Maria University as they share their own experience and wisdom around each virtue.`,
+		description: `Join Coach Joe Patterson in his course, "Athletics and The Virtues", as he explores how sport and the spiritual life can either help or hinder our journey to holiness. Over his 28 years of coaching (as well as directing athletics at Ave Maria University since 2020), Patterson has worked with thousands of athletes to help them grow as sons and daughters of God AND champions in their sport. As an added bonus, Coach Patterson is joined by coaches from Ave Maria University as they share their own experience and wisdom around each virtue.`,
 		sections: [
 			{ order: 1, title: 'Effort, Toughness, and Love', summary: 'Foundational principles for athletic and spiritual excellence.', duration: '11:17', type: 'video' },
 			{ order: 2, title: 'The Virtue of Humility', summary: 'Learning humility through competition and teamwork.', duration: '08:28', type: 'video' },
@@ -77,10 +77,33 @@ export const courses: Course[] = [
 			{ order: 8, title: 'The Virtue of Temperance', summary: 'Moderation and balance in athletic training.', duration: '02:43', type: 'video' },
 			{ order: 9, title: 'Discussion Guide', summary: 'Prompts for reflection and group discussion.', type: 'reading' }
 		],
-		presenterBio: 'Coach Joe Patterson has been coaching for over 27 years and has served as Director of Athletics at Ave Maria University since 2020. Throughout his career, Patterson has worked with thousands of athletes to help them grow as sons and daughters of God AND champions in their sport. His approach integrates the spiritual life with athletic excellence, helping athletes develop virtue through sport.',
+		presenterBio: 'Joe Patterson is in his 28th season as a head football coach, having served as the head coach at Ave Maria University for the past eight years. He has also served as the University\'s athletic director since 2020.\n\nCoach Patterson also taught literature for two decades, and he brings an educator\'s eye to the athletic field. He views athletics as a true training ground for virtue, especially when coupled with a robust academic education. A father of six, Coach Patterson is keenly aware of the impact that athletics can have on culture, either for ill or for good.',
 		presenterImage: '/images/patterson-course.jpg'
 	},
-	{ id: 3, slug: 'pro-life-rights-natural-law-and-catholic-thought', image: '/images/McGuire-course.jpg', heroImage: '/images/McGuire-course.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'Pro-life: Rights Natural Law, and Catholic Thought' },
+	{ 
+		id: 3, 
+		slug: 'pro-life-rights-natural-law-and-catholic-thought', 
+		image: '/images/McGuire-course.jpg', 
+		heroImage: '/images/McGuire-course.jpg', 
+		heroBackgroundImage: '/images/McGuire-hero.png', 
+		professor: 'DR. SEANA MCGUIRE (SEGRUE)', 
+		professorDisplay: 'Dr. Seana McGuire (Segrue)', 
+		title: 'Pro-Life: Rights, Natural Law, and Catholic Thought',
+		description: `Embark on a journey into the philosophy and teachings of the Catholic Church on the sanctity of life through this thought-provoking course. Delve into critical discussions on natural law, the moral complexities of end-of-life issues, the Church's position on abortion, and the broader concept of being pro-human. Unravel the rich tapestry of doctrine and belief that positions the Catholic Church at the forefront of advocating for life in all its stages.
+
+Join Dr. McGuire as she expertly guides you through this exploration, and together, you'll uncover the reasons behind the Church's unwavering pro-life stance, connecting these teachings with the challenges and opportunities presented in contemporary society.`,
+		sections: [
+			{ order: 1, title: 'Catholicism and Human Nature', summary: 'Understanding the Catholic view of human dignity and nature.', duration: '08:34', type: 'video' },
+			{ order: 2, title: 'Life in the Early Stages', summary: 'Exploring the Church\'s teachings on life from conception.', duration: '17:33', type: 'video' },
+			{ order: 3, title: 'The End of Life', summary: 'Catholic perspectives on end-of-life issues and dignity.', duration: '09:11', type: 'video' },
+			{ order: 4, title: 'The Life of the Guilty', summary: 'Examining Catholic teachings on capital punishment and justice.', duration: '12:46', type: 'video' },
+			{ order: 5, title: 'Life In The Every Day', summary: 'Applying pro-life principles to daily living.', duration: '10:42', type: 'video' },
+			{ order: 6, title: 'Life In The Family', summary: 'Pro-life values within family life and relationships.', duration: '15:25', type: 'video' },
+			{ order: 7, title: 'Life In Our Spirituality', summary: 'The spiritual dimensions of the pro-life worldview.', duration: '15:19', type: 'video' },
+			{ order: 8, title: 'Being Pro-Human', summary: 'Understanding what it means to be truly pro-human.', duration: '05:50', type: 'video' },
+			{ order: 9, title: 'Outline and Reflection Guide', summary: 'Course materials and reflection prompts for deeper study.', type: 'reading', resourceUrl: '/courses/pro-life-rights-natural-law-and-catholic-thought/guide.pdf' }
+		]
+	},
 	{ id: 4, slug: 'rise-of-american-politics', image: '/images/Michael-course.jpg', heroImage: '/images/Michael-course.jpg', professor: 'DR. MICHAEL BREIDENBACH', professorDisplay: 'Dr. Michael Breidenbach', title: 'The Rise of American Politics' },
 	{
 		id: 5,

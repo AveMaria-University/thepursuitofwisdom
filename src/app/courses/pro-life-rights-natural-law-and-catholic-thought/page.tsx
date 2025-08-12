@@ -29,8 +29,17 @@ export default function ProLifeCoursePage() {
 				</nav>
 			</header>
 
-			<section className="relative bg-pursuit-navy text-white overflow-hidden">
-				<div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 30% 30%, #ffffff22, transparent 70%)' }} />
+			<section 
+				className="relative text-white overflow-hidden"
+				style={{
+					backgroundImage: course.heroBackgroundImage ? `url(${course.heroBackgroundImage})` : undefined,
+					backgroundSize: 'cover',
+					backgroundPosition: 'center',
+					backgroundRepeat: 'no-repeat'
+				}}
+			>
+				{/* Blue overlay */}
+				<div className="absolute inset-0 bg-pursuit-navy opacity-75 pointer-events-none" />
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
 					<div className="grid md:grid-cols-2 gap-16 items-center">
 						<div>
@@ -51,7 +60,7 @@ export default function ProLifeCoursePage() {
 
 			<main className="relative">
 				<div 
-					className="relative left-1/2 right-1/2 -mx-[50vw] w-screen h-[1000px]"
+					className="relative left-1/2 right-1/2 -mx-[50vw] w-screen h-[880px]"
 					style={{
 						backgroundImage: 'url(/images/compass.jpeg)',
 						backgroundSize: 'cover',
@@ -70,9 +79,9 @@ export default function ProLifeCoursePage() {
 									desc = desc.replace(new RegExp(`^${course.title}\\s*\n+`), '');
 								}
 								return (
-									<div className="relative z-10 max-w-5xl mx-auto space-y-6">
-										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
-										{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
+									<div className="relative z-10 max-w-5xl mx-auto space-y-6 text-center">
+										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight">{course.title}</h2>
+										{desc && <p className="text-gray-700 text-base leading-relaxed">{desc}</p>}
 										<div className="pt-2">
 											<Link href="#program" className="inline-block">
 												<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
@@ -85,7 +94,7 @@ export default function ProLifeCoursePage() {
 					</div>
 				</div>
 
-				<section id="program" className="mb-24">
+				<section id="program" className="mb-24 pt-16">
 					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 						<h3 className="font-crimson font-bold text-3xl md:text-4xl text-pursuit-navy mb-12 text-center">Explore the Program</h3>
 						<LessonsList sections={course.sections || []} courseTitle={course.title} />

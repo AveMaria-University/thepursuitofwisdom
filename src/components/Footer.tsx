@@ -3,8 +3,16 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-pursuit-navy text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer 
+      className="text-white relative"
+      style={{
+        backgroundImage: 'url(/images/footer-background.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Ave Maria University Logo and Info */}
           <div className="md:col-span-1">
