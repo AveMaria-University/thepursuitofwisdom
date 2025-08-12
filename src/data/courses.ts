@@ -21,6 +21,7 @@ export interface Course {
 	image: string; // primary/card image
 	heroImage?: string; // optional distinct hero image
 	heroBackgroundImage?: string; // optional background image for hero section
+	exploreImage?: string; // optional image for explore the program section
 	description?: string;
 	tagline?: string;
 	trailerUrl?: string; // optional Dropbox trailer video
@@ -54,7 +55,31 @@ export const courses: Course[] = [
 		presenterBio: 'Gerald P. Boersma is Professor of Theology at Ave Maria University and Humboldt Fellow at the University of Tübingen. Boersma is a Catholic systematic theologian whose writings focus especially on the thought of Augustine and Thomas Aquinas. He is author of "Augustine\'s Early Theology of Image" (Oxford, 2016) and numerous essays as journal articles and book chapters devoted to theology, philosophy, and literary criticism. Prior to coming to Ave Maria University, he taught for five years at St. Bonaventure University. He has held fellowships at the Villanova University and the University of Tübingen.',
 		presenterImage: '/images/geral-course.jpg'
 	},
-	{ id: 2, slug: 'athletics-and-the-virtues', image: '/images/patterson-course.jpg', heroImage: '/images/patterson-course.jpg', professor: 'COACH JOE PATTERSON', professorDisplay: 'Coach Joe Patterson', title: 'Athletics and the Virtues' },
+	{
+		id: 2,
+		slug: 'athletics-and-the-virtues',
+		image: '/images/patterson-course.jpg',
+		heroImage: '/images/patterson-course.jpg',
+		heroBackgroundImage: '/images/athlete-virtues.jpg',
+		exploreImage: '/images/patterson-explore.jpg',
+		professor: 'COACH JOE PATTERSON',
+		professorDisplay: 'Coach Joe Patterson',
+		title: 'Athletics and the Virtues',
+		description: `Athletics and the Virtues\n\nJoin Coach Joe Patterson in his course, "Athletics and The Virtues", as he explores how sport and the spiritual life can either help or hinder our journey to holiness. Over the last 27 years of coaching (as well as directing athletics at Ave Maria University since 2020), Patterson has worked with thousands of athletes to help them grow as sons and daughters of God AND champions in their sport. As an added bonus, Coach Patterson is joined by coaches from Ave Maria University as they share their own experience and wisdom around each virtue.`,
+		sections: [
+			{ order: 1, title: 'Effort, Toughness, and Love', summary: 'Foundational principles for athletic and spiritual excellence.', duration: '11:17', type: 'video' },
+			{ order: 2, title: 'The Virtue of Humility', summary: 'Learning humility through competition and teamwork.', duration: '08:28', type: 'video' },
+			{ order: 3, title: 'The Virtue of Generosity', summary: 'Giving of oneself for the team and others.', duration: '05:12', type: 'video' },
+			{ order: 4, title: 'The Virtue of Charity', summary: 'Love for God and neighbor in athletics.', duration: '03:43', type: 'video' },
+			{ order: 5, title: 'The Virtue of Patience', summary: 'Developing patience through training and competition.', duration: '07:48', type: 'video' },
+			{ order: 6, title: 'The Virtue of Piety', summary: 'Reverence and devotion in athletic pursuits.', duration: '10:08', type: 'video' },
+			{ order: 7, title: 'The Virtue of Chastity', summary: 'Purity and self-control in sport and life.', duration: '05:03', type: 'video' },
+			{ order: 8, title: 'The Virtue of Temperance', summary: 'Moderation and balance in athletic training.', duration: '02:43', type: 'video' },
+			{ order: 9, title: 'Discussion Guide', summary: 'Prompts for reflection and group discussion.', type: 'reading' }
+		],
+		presenterBio: 'Coach Joe Patterson has been coaching for over 27 years and has served as Director of Athletics at Ave Maria University since 2020. Throughout his career, Patterson has worked with thousands of athletes to help them grow as sons and daughters of God AND champions in their sport. His approach integrates the spiritual life with athletic excellence, helping athletes develop virtue through sport.',
+		presenterImage: '/images/patterson-course.jpg'
+	},
 	{ id: 3, slug: 'pro-life-rights-natural-law-and-catholic-thought', image: '/images/McGuire-course.jpg', heroImage: '/images/McGuire-course.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'Pro-life: Rights Natural Law, and Catholic Thought' },
 	{ id: 4, slug: 'rise-of-american-politics', image: '/images/Michael-course.jpg', heroImage: '/images/Michael-course.jpg', professor: 'DR. MICHAEL BREIDENBACH', professorDisplay: 'Dr. Michael Breidenbach', title: 'The Rise of American Politics' },
 	{
