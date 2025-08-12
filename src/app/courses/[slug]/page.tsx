@@ -93,7 +93,7 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 				<div 
 					className={`relative left-1/2 right-1/2 -mx-[50vw] w-screen ${getIntroBackgroundHeight()}`}
 					style={{
-						backgroundImage: 'url(/images/compass.jpeg)',
+						backgroundImage: `url(${course.introBackgroundImage || '/images/compass.jpeg'})`,
 						backgroundSize: 'cover',
 						backgroundPosition: 'center',
 						backgroundRepeat: 'no-repeat'
@@ -177,7 +177,7 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 									<div className="bg-white rounded-xl shadow-md p-10 md:p-12">
 										<h3 className="font-crimson font-bold text-2xl md:text-3xl mb-6 text-center md:text-left">About the Presenter</h3>
 										{course.presenterBio && (
-											<p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line">{course.presenterBio}</p>
+											<div className="text-gray-700 text-sm leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: course.presenterBio }} />
 										)}
 									</div>
 								</div>

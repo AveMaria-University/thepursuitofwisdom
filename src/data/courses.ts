@@ -21,6 +21,7 @@ export interface Course {
 	image: string; // primary/card image
 	heroImage?: string; // optional distinct hero image
 	heroBackgroundImage?: string; // optional background image for hero section
+	introBackgroundImage?: string; // optional background image for introduction section
 	exploreImage?: string; // optional image for explore the program section
 	description?: string;
 	tagline?: string;
@@ -201,8 +202,57 @@ Embark on a transformative journey into the heart of Mariology with Dr. Mark Mir
 Dr. Miravalle has authored/edited over 20 books on Mariology and Spiritual Theology, including Meet Your Mother, Meet Your Spiritual Father, Time to Meet the Angels, and Jesus In You.`,
 		presenterImage: '/images/mark-course.jpg'
 	},
-	{ id: 8, slug: 'introduction-to-sacramental-theology', image: '/images/Roger-course.jpg', heroImage: '/images/RogerNuttBCam-Enhanced-SR.jpg', professor: 'DR. ROGER NUTT', professorDisplay: 'Dr. Roger Nutt', title: 'Introduction to Sacramental Theology' },
-	{ id: 9, slug: 'stewarding-the-environment', image: '/images/sheperd-course.jpg', heroImage: '/images/ShephardBCam-Enhanced-SR.jpg', professor: 'DR. SAMUEL SHEPARD', professorDisplay: 'Dr. Samuel Shepard', title: 'Stewarding the Environment' },
+	{ 
+		id: 8, 
+		slug: 'introduction-to-sacramental-theology', 
+		image: '/images/Roger-course.jpg', 
+		heroImage: '/images/RogerNuttBCam-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/mary-program.jpeg',
+		exploreImage: '/images/mary-program.jpeg',
+		professor: 'DR. ROGER NUTT', 
+		professorDisplay: 'Dr. Roger Nutt', 
+		title: 'Introduction to Sacramental Theology',
+		description: `An Introduction to Sacramental Theology
+
+Join Dr. Roger Nutt in his course, "Introduction to Sacramental Theology," as he unveils the significance of the seven sacraments and the integral role they play in the Catholic faith journey. Amidst societal skepticism, the sacraments stand as a profound source of truth and grace, enriching our spiritual lives. With Dr. Nutt's guidance, gain a deeper understanding of sacramental theology and discover how these revered rites can offer spiritual fulfillment and enrich your faith journey.`,
+		sections: [
+			{ order: 1, title: 'Salvation Through the Sacraments', summary: 'Understanding how the sacraments mediate God\'s saving grace.', duration: '28:13', type: 'video' },
+			{ order: 2, title: 'The Gift of Grace', summary: 'Exploring the nature and significance of sacramental grace.', duration: '25:14', type: 'video' },
+			{ order: 3, title: 'Living Our Faith', summary: 'Integrating sacramental life into daily Catholic practice.', duration: '20:01', type: 'video' },
+			{ order: 4, title: 'Outline and Further Reading', summary: 'Study guide and additional resources for deeper exploration.', type: 'reading' }
+		],
+		presenterBio: `Dr. Roger Nutt, S.T.L., S.T.D., is the provost and a professor of theology at Ave Maria University. He co-directs the Aquinas Center for Theological Renewal and is a member of the Academy of Catholic Theology. Dr. Nutt's research focuses on Christology and sacramental theology, particularly the theology of St. Thomas Aquinas. He has written three books and translated works, with publications in esteemed journals. Additionally, Dr. Nutt serves as a co-editor for multiple volumes, contributing to subjects such as Christian responses to death, Aquinas and Christology, Aquinas and the Greek Fathers, and Thomism and predestination.`,
+		presenterImage: '/images/RogerNuttBCam-Enhanced-SR.jpg'
+	},
+	{ 
+		id: 9, 
+		slug: 'stewarding-the-environment', 
+		image: '/images/sheperd-course.jpg', 
+		heroImage: '/images/ShephardBCam-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/environment-hero.jpeg',
+		introBackgroundImage: '/images/tree-background.jpeg',
+		exploreImage: '/images/environment-hero.jpeg',
+		professor: 'DR. SAMUEL SHEPARD', 
+		professorDisplay: 'Dr. Samuel Shepard', 
+		title: 'Stewarding the Environment',
+		description: `Stewarding the Environment
+
+Join Dr. Samuel Shephard as he explores the wonders of creation and our role as stewards of the earth. Discover how Catholics interact with the natural world and responsibly utilize its goods. Through practical insights and thought provoking discussions, Dr. Shephard empowers you to embrace your role as a responsible steward, nurturing a peaceful relationship between humanity and the earth.
+
+Embark on this illuminating journey and appreciate the beauty and interconnectedness of the natural world, while learning to safeguard and cherish God's creation.`,
+		sections: [
+			{ order: 1, title: 'A History of Creation', summary: 'Understanding the origins and development of the natural world.', duration: '16:33', type: 'video' },
+			{ order: 2, title: 'Ecological Theory', summary: 'Exploring scientific and theological approaches to ecology.', duration: '15:36', type: 'video' },
+			{ order: 3, title: 'Why Should Catholics be Good Stewards of Creation?', summary: 'The Catholic foundation for environmental responsibility.', duration: '16:25', type: 'video' },
+			{ order: 4, title: 'Individual Responsibility', summary: 'Personal accountability in environmental stewardship.', duration: '11:09', type: 'video' },
+			{ order: 5, title: 'Everyday Stewardship', summary: 'Practical ways to care for creation in daily life.', duration: '14:54', type: 'video' },
+			{ order: 6, title: 'Outline and Additional Resources', summary: 'Study guide and supplementary materials for deeper exploration.', type: 'reading' }
+		],
+		presenterBio: `Dr. Samuel Shephard, a biology professor at Ave Maria University, grew up in the Scottish Highlands and later worked as a commercial fisherman in Ireland, sparking his passion for fisheries science. He pursued graduate studies in the field and made significant contributions to the scientific community through his publications. More recently, he has focused on environmental stewardship and integrating sustainability with Catholic teachings. Outside of academia, he is happily married with seven children, embracing the joys of family life. Dr. Samuel Shephard embodies a spirit of scholarly exploration, merging faith and science to promote harmonious coexistence with nature.
+
+Professional Webpage: <a href="https://www.samuelshephard.com" target="_blank" rel="noopener noreferrer" class="text-pursuit-navy hover:text-pursuit-gold transition-colors">Samuel Shephard | samuelshephard.com</a>`,
+		presenterImage: '/images/ShephardBCam-Enhanced-SR.jpg'
+	},
 	{ id: 10, slug: 'foundation-of-america-us-constitution', image: '/images/McGuire-course.jpg', heroImage: '/images/SeannaBCam-Enhanced-SR.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'The Foundation of America: U.S. Constitution' },
 	{ id: 11, slug: 'genius-of-gk-chesterton', image: '/images/Joseph-course.jpg', heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of G.K. Chesterton' },
 	{ id: 12, slug: 'genius-of-jrr-tolkien', image: '/images/Joseph-course.jpg', heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of J.R.R. Tolkien' },
