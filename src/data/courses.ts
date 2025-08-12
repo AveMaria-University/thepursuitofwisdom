@@ -175,7 +175,32 @@ Join this captivating journey through the emergence of American politics from a 
 		presenterBio: `Dr. Saverio Perugini is a mathematics and computer science professor at Ave Maria University. With a Ph.D. in computer science from Virginia Tech, he previously held a tenured professor position at the University of Dayton for 18 years. Dr. Perugini's research interests include information retrieval, human- computer interaction, and programming languages. He has published numerous scholarly papers and co-authored a laboratory manual through an IUSE grant from the National Science Foundation. In 2023, he published a programming languages textbook and is currently working on three book manuscripts. As a senior member of the ACM and IEEE Computer Society, he joined Ave Maria University in the fall of 2022 to establish and lead the computer science program.`,
 		presenterImage: '/images/Saverio-course.jpg'
 	},
-	{ id: 7, slug: 'introduction-to-mariology', image: '/images/mark-course.jpg', heroImage: '/images/mark-course.jpg', professor: 'DR. MARK MIRAVALLE', professorDisplay: 'Dr. Mark Miravalle', title: 'Introduction to Mariology' },
+	{ 
+		id: 7, 
+		slug: 'introduction-to-mariology', 
+		image: '/images/mark-course.jpg', 
+		heroImage: '/images/mark-course.jpg', 
+		heroBackgroundImage: '/images/mary-hero.png', 
+		exploreImage: '/images/mary-program.jpeg',
+		professor: 'DR. MARK MIRAVALLE', 
+		professorDisplay: 'Dr. Mark Miravalle', 
+		title: 'Introduction to Mariology',
+		description: `An Introduction to the Study of Mary
+
+Embark on a transformative journey into the heart of Mariology with Dr. Mark Miravalle's insightful course, "Introduction to Mariology." Explore the profound significance of Mary, the Mother of God, within the Catholic tradition. Delve into the four Marian Dogmas – her Divine Motherhood, Perpetual Virginity, Immaculate Conception, and Assumption – and understand their implications for our faith. Discover the profound role of Mary as our spiritual mother, guiding and interceding for us on our path to Christ. Through Dr. Miravalle's expert guidance, cultivate a deeper appreciation for Mary's unique place in salvation history and her enduring influence on the lives of believers.`,
+		sections: [
+			{ order: 1, title: 'Why Mary and Mariology?', summary: 'Understanding the importance and relevance of Marian studies.', duration: '13:53', type: 'video' },
+			{ order: 2, title: 'The Four Marian Dogmas', summary: 'Exploring Divine Motherhood, Perpetual Virginity, Immaculate Conception, and Assumption.', duration: '22:45', type: 'video' },
+			{ order: 3, title: 'Is Mary Your Mother?', summary: 'Understanding Mary\'s maternal role in the spiritual life.', duration: '23:44', type: 'video' },
+			{ order: 4, title: 'The Three Great Marian Devotions', summary: 'Key devotional practices honoring the Mother of God.', duration: '24:24', type: 'video' },
+			{ order: 5, title: 'The Marian Apparitions', summary: 'Examining significant apparitions of Our Lady throughout history.', duration: '23:22', type: 'video' },
+			{ order: 6, title: 'Discussion Guide', summary: 'Study guide and discussion questions for deeper reflection.', type: 'reading' }
+		],
+		presenterBio: `Dr. Mark Miravalle earned his Sacred Theological Doctorate from the Pontifical University of St. Thomas Aquinas in Rome. He holds the Saint John Paul II Chair of Mariology at Franciscan University and the Constance Schifflin-Blum Chair of Mariology at Ave Maria University. He founded and edits Ecce Mater Tua, an international Mariology research journal, and presides over the International Marian Association, a group of over 130 theologians, bishops, clergy, and laity promoting Marian devotion and doctrine. A renowned speaker on Mariology, he has addressed numerous episcopal conferences and assisted bishops with apparition investigations. 
+
+Dr. Miravalle has authored/edited over 20 books on Mariology and Spiritual Theology, including Meet Your Mother, Meet Your Spiritual Father, Time to Meet the Angels, and Jesus In You.`,
+		presenterImage: '/images/mark-course.jpg'
+	},
 	{ id: 8, slug: 'introduction-to-sacramental-theology', image: '/images/Roger-course.jpg', heroImage: '/images/RogerNuttBCam-Enhanced-SR.jpg', professor: 'DR. ROGER NUTT', professorDisplay: 'Dr. Roger Nutt', title: 'Introduction to Sacramental Theology' },
 	{ id: 9, slug: 'stewarding-the-environment', image: '/images/sheperd-course.jpg', heroImage: '/images/ShephardBCam-Enhanced-SR.jpg', professor: 'DR. SAMUEL SHEPARD', professorDisplay: 'Dr. Samuel Shepard', title: 'Stewarding the Environment' },
 	{ id: 10, slug: 'foundation-of-america-us-constitution', image: '/images/McGuire-course.jpg', heroImage: '/images/SeannaBCam-Enhanced-SR.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'The Foundation of America: U.S. Constitution' },

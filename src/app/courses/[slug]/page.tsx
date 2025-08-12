@@ -151,12 +151,12 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 						backgroundRepeat: 'no-repeat'
 					} : {}}
 				>
-					{/* Gray overlay for explore background */}
+					{/* White overlay for explore background */}
 					{course.exploreImage && (
-						<div className="absolute inset-0 bg-gray-900 opacity-60 pointer-events-none" />
+						<div className="absolute inset-0 bg-white opacity-70 pointer-events-none" />
 					)}
 					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
-						<h3 className="font-crimson font-bold text-3xl md:text-4xl text-white mb-12 text-center">Explore the Program</h3>
+						<h3 className={`font-crimson font-bold text-3xl md:text-4xl mb-12 text-center ${course.exploreImage ? 'text-pursuit-navy' : 'text-pursuit-navy'}`}>Explore the Program</h3>
 						<LessonsList sections={course.sections || []} courseTitle={course.title} />
 					</div>
 				</section>
