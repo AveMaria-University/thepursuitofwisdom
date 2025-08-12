@@ -1,21 +1,32 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface DropboxVideoProps {
   dropboxUrl: string;
   title?: string;
   className?: string;
   thumbnailUrl?: string;
+  open?: boolean; // controlled open
+  onClose?: () => void;
+  autoplay?: boolean;
+  hideThumbnail?: boolean; // allow hidden trigger usage
 }
 
 const DropboxVideo: React.FC<DropboxVideoProps> = ({ 
   dropboxUrl, 
   title = "Video", 
   className = "",
-  thumbnailUrl
+  thumbnailUrl,
+  open,
+  onClose,
+  autoplay = true,
+  hideThumbnail = false
 }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
+  const isControlled = typeof open === 'boolean';
+  const isModalOpen = isControlled ? open! : internalOpen;
 
   // Convert Dropbox URL to direct link
   const getDirectUrl = (url: string) => {
@@ -26,12 +37,18 @@ const DropboxVideo: React.FC<DropboxVideoProps> = ({
 
   const directUrl = getDirectUrl(dropboxUrl);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const openModal = () => {
+    if (!isControlled) setInternalOpen(true);
+  };
+  const closeModal = () => {
+    if (!isControlled) setInternalOpen(false);
+    onClose?.();
+  };
 
   return (
     <>
       {/* Video Thumbnail/Placeholder - Clickable */}
+      {!hideThumbnail && (
       <div 
         className={`relative cursor-pointer group ${className}`}
         onClick={openModal}
@@ -39,10 +56,13 @@ const DropboxVideo: React.FC<DropboxVideoProps> = ({
         {thumbnailUrl ? (
           // Custom thumbnail
           <div className="relative w-full h-full">
-            <img 
-              src={thumbnailUrl} 
+            <Image
+              src={thumbnailUrl}
               alt={title}
-              className="w-full h-full object-cover rounded-2xl"
+              fill
+              className="object-cover rounded-2xl"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority={false}
             />
             {/* Play button overlay */}
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all rounded-2xl">
@@ -63,11 +83,12 @@ const DropboxVideo: React.FC<DropboxVideoProps> = ({
             </div>
           </div>
         )}
-      </div>
+  </div>
+  )}
 
       {/* Lightbox Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-75">
           {/* Modal Background - Click to close */}
           <div 
             className="absolute inset-0 cursor-pointer"
@@ -89,7 +110,7 @@ const DropboxVideo: React.FC<DropboxVideoProps> = ({
             {/* Video Player */}
             <video 
               controls 
-              autoPlay
+              autoPlay={autoplay}
               preload="metadata"
               className="w-full h-auto max-h-[80vh]"
             >

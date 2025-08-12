@@ -145,7 +145,7 @@ export default function HomePage() {
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg leading-relaxed">
               <p>
-                In today's fast-paced, information-driven world, we may feel overwhelmed by the constant barrage of 
+                In today&apos;s fast-paced, information-driven world, we may feel overwhelmed by the constant barrage of 
                 noise and data. Numbers, facts, opinions, websites, books...we can easily become burned out of the 
                 joy of learning.
               </p>
@@ -332,7 +332,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center text-white">
             <blockquote className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed mb-8">
-              "Wisdom is a tree of life to those who lay hold of her; those who hold her fast are called blessed."
+              &quot;Wisdom is a tree of life to those who lay hold of her; those who hold her fast are called blessed.&quot;
             </blockquote>
             
             {/* Golden line divider */}

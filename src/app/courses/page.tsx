@@ -1,107 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { courses } from '@/data/courses'
 
 export default function CoursesPage() {
-  // Course data with your specified images and exact content
-  const courses = [
-    {
-      id: 1,
-      image: '/images/geral-course.jpg',
-      professor: 'DR. GERALD BOERSMA',
-      title: 'The Life and Teachings of St. Augustine',
-    },
-    {
-      id: 2,
-      image: '/images/patterson-course.jpg',
-      professor: 'COACH JOE PATTERSON',
-      title: 'Athletics and the Virtues',
-    },
-    {
-      id: 3,
-      image: '/images/McGuire-course.jpg',
-      professor: 'DR. SEANA MCGUIRE (SEGRUE)',
-      title: 'Pro-life: Rights Natural Law, and Catholic Thought',
-    },
-    {
-      id: 4,
-      image: '/images/Michael-course.jpg',
-      professor: 'DR. MICHAEL BREIDENBACH',
-      title: 'The Rise of American Politics',
-    },
-    {
-      id: 5,
-      image: '/images/DIann-course.jpg',
-      professor: 'DR. DIANN ECRET',
-      title: 'Catholic Bioethics: Current Issues',
-    },
-    {
-      id: 6,
-      image: '/images/Saverio-course.jpg',
-      professor: 'DR. SAVERIO PERUGINI',
-      title: 'An Introduction to Computer Science',
-    },
-    {
-      id: 7,
-      image: '/images/mark-course.jpg',
-      professor: 'DR. MARK MIRAVALLE',
-      title: 'Introduction to Mariology',
-    },
-    {
-      id: 8,
-      image: '/images/Roger-course.jpg',
-      professor: 'DR. ROGER NUTT',
-      title: 'Introduction to Sacramental Theology',
-    },
-    {
-      id: 9,
-      image: '/images/sheperd-course.jpg',
-      professor: 'DR. SAMUEL SHEPARD',
-      title: 'Stewarding the Environment',
-    },
-    {
-      id: 10,
-      image: '/images/McGuire-course.jpg',
-      professor: 'DR. SEANA MCGUIRE (SEGRUE)',
-      title: 'The Foundation of America: U.S. Constitution',
-    },
-    {
-      id: 11,
-      image: '/images/Joseph-course.jpg',
-      professor: 'JOSEPH PEARCE',
-      title: 'The Genius of G.K. Chesterton',
-    },
-    {
-      id: 12,
-      image: '/images/Joseph-course.jpg',
-      professor: 'JOSEPH PEARCE',
-      title: 'The Genius of J.R.R. Tolkien',
-    },
-    {
-      id: 13,
-      image: '/images/James-course.jpg',
-      professor: 'DR. JANICE CHIK BREIDENBACH',
-      title: 'The Philosophy of Motherhood',
-    },
-    {
-      id: 14,
-      image: '/images/Dauphinais-course.jpg',
-      professor: 'DR. MICHEL DAUPHINAIS',
-      title: 'The Wisdom of C.S. Lewis',
-    },
-    {
-      id: 15,
-      image: '/images/James-course.jpg',
-      professor: 'DR. JAMES PATTERSON',
-      title: 'The Wisdom of Fulton Sheen',
-    },
-    {
-      id: 16,
-      image: '/images/Durand-course.jpg',
-      professor: 'DAVE DURAND',
-      title: 'The Virtues and Leadership in Business',
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -151,16 +52,18 @@ export default function CoursesPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {courses.map((course) => (
             <div key={course.id} className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col group hover:shadow-xl transition-shadow">
-              {/* Course Image - Larger aspect ratio */}
-              <div className="aspect-[4/3] bg-gray-200 overflow-hidden">
-                <Image
-                  src={course.image}
-                  alt={course.professor}
-                  width={500}
-                  height={400}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+              <Link href={`/courses/${course.slug}`} className="block group">
+                {/* Course Image - Larger aspect ratio */}
+                <div className="aspect-[4/3] bg-gray-200 overflow-hidden">
+                  <Image
+                    src={course.image}
+                    alt={course.professor}
+                    width={500}
+                    height={400}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </Link>
               
               {/* Course Content - More padding */}
               <div className="p-8 text-center flex-1 flex flex-col">
@@ -170,9 +73,11 @@ export default function CoursesPage() {
                 <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-8 leading-tight flex-1 flex items-center justify-center">
                   {course.title}
                 </h3>
-                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-xl rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
-                  ENROLL
-                </button>
+                <Link href={`/courses/${course.slug}`} className="w-full mt-auto">
+                  <span className="block w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-xl rounded-lg hover:bg-yellow-600 transition-colors text-center">
+                    ENROLL
+                  </span>
+                </Link>
               </div>
             </div>
           ))}
