@@ -104,7 +104,27 @@ Join Dr. McGuire as she expertly guides you through this exploration, and togeth
 			{ order: 9, title: 'Outline and Reflection Guide', summary: 'Course materials and reflection prompts for deeper study.', type: 'reading', resourceUrl: '/courses/pro-life-rights-natural-law-and-catholic-thought/guide.pdf' }
 		]
 	},
-	{ id: 4, slug: 'rise-of-american-politics', image: '/images/Michael-course.jpg', heroImage: '/images/Michael-course.jpg', professor: 'DR. MICHAEL BREIDENBACH', professorDisplay: 'Dr. Michael Breidenbach', title: 'The Rise of American Politics' },
+	{ 
+		id: 4, 
+		slug: 'rise-of-american-politics', 
+		image: '/images/Michael-course.jpg', 
+		heroImage: '/images/Michael-course.jpg', 
+		heroBackgroundImage: '/images/riseinpolitics-hero.jpg', 
+		exploreImage: '/images/politics-program.jpg',
+		presenterImage: '/images/Michael-course.jpg',
+		professor: 'DR. MICHAEL BREIDENBACH', 
+		professorDisplay: 'Dr. Michael Breidenbach', 
+		title: 'The Rise of American Politics',
+		description: `Dive into the compelling history of Catholics in America with Dr. Michael Breidenbach's course, "The Rise of American Politics." Uncover the vital role Catholics played in founding the United States and explore their dual loyalty to America and the Holy See, despite doubts about their fidelity. With Dr. Breidenbach's expertise to guide you, examine the rich history of Catholics in America and their dedication to both religious and national identities.
+
+Join this captivating journey through the emergence of American politics from a distinctly Catholic perspective.`,
+		presenterBio: `Dr. Michael Breidenbach is an associate professor of history at Ave Maria University, specializing in American politics, religion, and law. He authored "Our Dear-Bought Liberty" (Harvard University Press, 2021), a runner-up for the Journal of the American Revolution's 2022 Book of the Year Award. Dr. Breidenbach co-edited "The Cambridge Companion to the First Amendment and Religious Liberty" (Cambridge University Press, 2020) and has been published in esteemed publications. He is a fellow of the Royal Historical Society, he has held research positions at institutions including Princeton University and Oxford University, and made appearances on national media. Dr. Breidenbach earned his Ph.D. from King's College, Cambridge, and resides in Southwest Florida with his family.`,
+		sections: [
+			{ order: 1, title: 'Catholics as the Founders', summary: 'Exploring the role Catholics played in founding the United States.', duration: '18:23', type: 'video' },
+			{ order: 2, title: 'Catholics and the Constitution', summary: 'Understanding Catholic influence on the U.S. Constitution.', duration: '21:31', type: 'video' },
+			{ order: 3, title: 'Catholics in American Society', summary: 'Examining Catholic integration into American social fabric.', duration: '25:02', type: 'video' }
+		]
+	},
 	{
 		id: 5,
 		slug: 'catholic-bioethics-current-issues',
