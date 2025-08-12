@@ -73,7 +73,7 @@ export default function AmericanFoundersCoursePage() {
 									<div className="relative z-10 max-w-5xl mx-auto space-y-6">
 										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
 										{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
-										<div className="pt-2">
+										<div className="pt-2 text-center">
 											<Link href="#program" className="inline-block">
 												<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
 											</Link>

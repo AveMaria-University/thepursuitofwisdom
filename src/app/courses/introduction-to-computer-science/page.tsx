@@ -29,8 +29,17 @@ export default function ComputerScienceCoursePage() {
 				</nav>
 			</header>
 
-			<section className="relative bg-pursuit-navy text-white overflow-hidden">
-				<div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 30% 30%, #ffffff22, transparent 70%)' }} />
+			<section 
+				className="relative text-white overflow-hidden"
+				style={{
+					backgroundImage: course.heroBackgroundImage ? `url(${course.heroBackgroundImage})` : undefined,
+					backgroundSize: 'cover',
+					backgroundPosition: 'center',
+					backgroundRepeat: 'no-repeat'
+				}}
+			>
+				{/* Blue overlay */}
+				<div className="absolute inset-0 bg-pursuit-navy opacity-75 pointer-events-none" />
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
 					<div className="grid md:grid-cols-2 gap-16 items-center">
 						<div>
@@ -73,7 +82,7 @@ export default function ComputerScienceCoursePage() {
 									<div className="relative z-10 max-w-5xl mx-auto space-y-6">
 										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
 										{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
-										<div className="pt-2">
+										<div className="pt-2 text-center">
 											<Link href="#program" className="inline-block">
 												<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
 											</Link>
@@ -85,15 +94,26 @@ export default function ComputerScienceCoursePage() {
 					</div>
 				</div>
 
-				<section id="program" className="mb-24">
-					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-						<h3 className="font-crimson font-bold text-3xl md:text-4xl text-pursuit-navy mb-12 text-center">Explore the Program</h3>
+				<section 
+					id="program" 
+					className="relative left-1/2 right-1/2 -mx-[50vw] w-screen py-16"
+					style={{
+						backgroundImage: course.exploreImage ? `url(${course.exploreImage})` : undefined,
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat'
+					}}
+				>
+					{/* Gray-white overlay for better text readability */}
+					<div className="absolute inset-0 bg-gray-800 opacity-80 pointer-events-none" />
+					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+						<h3 className="font-crimson font-bold text-3xl md:text-4xl text-white mb-12 text-center">Explore the Program</h3>
 						<LessonsList sections={course.sections || []} courseTitle={course.title} />
 					</div>
 				</section>
 
 				{(course.presenterBio || course.presenterImage) && (
-					<section className="mt-32 relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-pursuit-gold pb-0">
+					<section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-pursuit-gold pb-0">
 						<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 							<div className="flex flex-col md:flex-row md:items-start md:space-x-16">
 								{course.presenterImage && (

@@ -130,6 +130,7 @@ Join this captivating journey through the emergence of American politics from a 
 		slug: 'catholic-bioethics-current-issues',
 		image: '/images/DIann-course.jpg',
 		heroImage: '/images/DIannPort-Enhanced-SR.jpg',
+		heroBackgroundImage: '/images/bioethics-hero.jpg',
 		professor: 'DR. DIANN ECRET',
 		professorDisplay: 'Dr. Diann Ecret',
 		title: 'Catholic Bioethics: Current Issues',
@@ -148,6 +149,8 @@ Join this captivating journey through the emergence of American politics from a 
 		slug: 'introduction-to-computer-science',
 		image: '/images/Saverio-course.jpg',
 		heroImage: '/images/Saverio-course.jpg',
+		heroBackgroundImage: '/images/computer-hero.jpeg',
+		exploreImage: '/images/computer-hero.jpeg',
 		professor: 'DR. SAVERIO PERUGINI',
 		professorDisplay: 'Dr. Saverio Perugini',
 		title: 'An Introduction to Computer Science',
@@ -168,7 +171,9 @@ Join this captivating journey through the emergence of American politics from a 
 			{ order: 13, title: 'Careers In Computer Science', summary: 'Vocational paths and industry opportunities.', duration: '04:37', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/a8n7k7obx2hk3pyuku57m/Saverio-Course-13-BRYAN.mp4?rlkey=kmkfhydbiomp6jrdggew2qww8&st=ywq38gk0&dl=0' },
 			{ order: 14, title: 'Conclusion', summary: 'Recap and encouragement for further exploration.', duration: '08:22', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/aepgq88dufqs4t1mxart9/Saverio-Course-14-Closing-BRYAN.mp4?rlkey=ft03w4le7o0uswy531encvvfr&st=sa6ydrwb&dl=0' },
 			{ order: 15, title: 'Outline and Additional Resources', summary: 'Computer Science Guidebook.', type: 'reading', resourceUrl: '/courses/introduction-to-computer-science/guide.pdf' }
-		]
+		],
+		presenterBio: `Dr. Saverio Perugini is a mathematics and computer science professor at Ave Maria University. With a Ph.D. in computer science from Virginia Tech, he previously held a tenured professor position at the University of Dayton for 18 years. Dr. Perugini's research interests include information retrieval, human- computer interaction, and programming languages. He has published numerous scholarly papers and co-authored a laboratory manual through an IUSE grant from the National Science Foundation. In 2023, he published a programming languages textbook and is currently working on three book manuscripts. As a senior member of the ACM and IEEE Computer Society, he joined Ave Maria University in the fall of 2022 to establish and lead the computer science program.`,
+		presenterImage: '/images/Saverio-course.jpg'
 	},
 	{ id: 7, slug: 'introduction-to-mariology', image: '/images/mark-course.jpg', heroImage: '/images/mark-course.jpg', professor: 'DR. MARK MIRAVALLE', professorDisplay: 'Dr. Mark Miravalle', title: 'Introduction to Mariology' },
 	{ id: 8, slug: 'introduction-to-sacramental-theology', image: '/images/Roger-course.jpg', heroImage: '/images/RogerNuttBCam-Enhanced-SR.jpg', professor: 'DR. ROGER NUTT', professorDisplay: 'Dr. Roger Nutt', title: 'Introduction to Sacramental Theology' },
