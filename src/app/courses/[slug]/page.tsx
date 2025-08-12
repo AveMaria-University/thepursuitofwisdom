@@ -62,39 +62,35 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 					<div className="hidden md:block absolute -right-10 top-1/2 -translate-y-1/2 opacity-[0.08] pointer-events-none select-none">
 						<div className="w-[520px] h-[520px] bg-[radial-gradient(circle_at_center,#C9972C33,transparent_70%)] rounded-full" />
 					</div>
-					<div className="relative z-10 max-w-4xl mx-auto">
-						{course.trailerUrl ? (
+					{course.trailerUrl && (
+						<div className="relative z-10 max-w-4xl mx-auto">
 							<DropboxVideo
 								dropboxUrl={course.trailerUrl}
 								title={course.title}
 								thumbnailUrl={heroImage}
 								className="w-full aspect-video rounded-xl overflow-hidden"
 							/>
-						) : (
-							<div className="w-full rounded-xl border border-pursuit-navy/20 bg-gradient-to-br from-pursuit-navy/95 via-pursuit-navy/90 to-pursuit-navy/80 p-8 md:p-12 text-white">
-								{(!course.description || !course.description.startsWith(course.title)) && (
-									<h2 className="font-crimson font-bold text-3xl md:text-4xl mb-6">{course.title}</h2>
-								)}
-								{course.description && (
-									<p className="text-sm md:text-base leading-relaxed whitespace-pre-line text-gray-200 mb-8">{course.description}</p>
-								)}
-								<Link href="#program" className="inline-block">
-									<button className="bg-pursuit-gold text-white hover:bg-yellow-600 transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
-								</Link>
-							</div>
-						)}
-					</div>
-					{course.trailerUrl && (
-						<div className="relative z-10 max-w-5xl mx-auto mt-10 space-y-6">
-							<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
-							{course.description && <p className="text-gray-700 text-base leading-relaxed">{course.description}</p>}
-							<div className="pt-2">
-								<Link href="#program" className="inline-block">
-									<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
-								</Link>
-							</div>
 						</div>
 					)}
+					{(() => {
+						// Normalize description for consistent layout; strip leading title line if duplicated inside description text
+						let desc = course.description || '';
+						if (desc.startsWith(course.title)) {
+							// remove the title line and any following blank lines
+							desc = desc.replace(new RegExp(`^${course.title}\\s*\n+`), '');
+						}
+						return (
+							<div className={`relative z-10 max-w-5xl mx-auto space-y-6 ${course.trailerUrl ? 'mt-10' : ''}`}>
+								<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
+								{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
+								<div className="pt-2">
+									<Link href="#program" className="inline-block">
+										<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
+									</Link>
+								</div>
+							</div>
+						);
+					})()}
 				</div>
 
 				{/* Program Outline / Lessons */}
