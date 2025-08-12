@@ -15,6 +15,16 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 	if (!course) return notFound();
 	const heroImage = course.heroImage || course.image;
 
+	// Create hero section style with optional background image
+	const heroSectionStyle = course.heroBackgroundImage 
+		? {
+			backgroundImage: `url(${course.heroBackgroundImage})`,
+			backgroundSize: 'cover',
+			backgroundPosition: 'center',
+			backgroundRepeat: 'no-repeat'
+		  }
+		: {};
+
 	return (
 		<div className="min-h-screen bg-white">
 			<header className="pursuit-header text-white">
@@ -35,7 +45,14 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 				</nav>
 			</header>
 
-			<section className="relative bg-pursuit-navy text-white overflow-hidden">
+			<section 
+				className="relative bg-pursuit-navy text-white overflow-hidden"
+				style={heroSectionStyle}
+			>
+				{/* Blue overlay to maintain readability over background image */}
+				{course.heroBackgroundImage && (
+					<div className="absolute inset-0 bg-pursuit-navy opacity-75 pointer-events-none" />
+				)}
 				<div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 30% 30%, #ffffff22, transparent 70%)' }} />
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
 					<div className="grid md:grid-cols-2 gap-16 items-center">
@@ -44,9 +61,9 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 							<p className="text-pursuit-gold font-semibold mb-8 text-lg md:text-xl max-w-xl">{course.title}</p>
 							<Link href="/courses" className="inline-block bg-pursuit-gold text-white px-10 py-4 rounded text-sm tracking-widest font-semibold shadow hover:bg-yellow-600 transition-colors">BACK TO ALL COURSES</Link>
 						</div>
-						<div className="justify-self-center md:justify-self-end">
-							<div className="bg-white rounded-lg shadow-xl p-2 md:p-4 w-[340px] md:w-[360px]">
-								<div className="aspect-[4/5] relative rounded-md overflow-hidden">
+						<div className="justify-self-center md:justify-self-center">
+							<div className="w-[480px] md:w-[530px]">
+								<div className="aspect-[4/5] relative rounded-md overflow-hidden shadow-xl">
 									<Image src={heroImage} alt={course.professor} fill className="object-cover" />
 								</div>
 							</div>
@@ -55,53 +72,64 @@ export default function CourseLandingPage({ params }: CoursePageProps) {
 				</div>
 			</section>
 
-			<main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0">
-				{/* Video + Description Card */}
-				<div className="bg-white rounded-xl shadow-lg p-6 md:p-12 mb-24 relative overflow-hidden">
-					{/* Subtle decorative compass on right side */}
-					<div className="hidden md:block absolute -right-10 top-1/2 -translate-y-1/2 opacity-[0.08] pointer-events-none select-none">
-						<div className="w-[520px] h-[520px] bg-[radial-gradient(circle_at_center,#C9972C33,transparent_70%)] rounded-full" />
-					</div>
-					{course.trailerUrl && (
-						<div className="relative z-10 max-w-4xl mx-auto">
-							<DropboxVideo
-								dropboxUrl={course.trailerUrl}
-								title={course.title}
-								thumbnailUrl={heroImage}
-								className="w-full aspect-video rounded-xl overflow-hidden"
-							/>
-						</div>
-					)}
-					{(() => {
-						// Normalize description for consistent layout; strip leading title line if duplicated inside description text
-						let desc = course.description || '';
-						if (desc.startsWith(course.title)) {
-							// remove the title line and any following blank lines
-							desc = desc.replace(new RegExp(`^${course.title}\\s*\n+`), '');
-						}
-						return (
-							<div className={`relative z-10 max-w-5xl mx-auto space-y-6 ${course.trailerUrl ? 'mt-10' : ''}`}>
-								<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
-								{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
-								<div className="pt-2">
-									<Link href="#program" className="inline-block">
-										<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
-									</Link>
-								</div>
+			<main className="relative">
+				{/* Full-width background section */}
+				<div 
+					className="relative left-1/2 right-1/2 -mx-[50vw] w-screen h-[1050px]"
+					style={{
+						backgroundImage: 'url(/images/compass.jpeg)',
+						backgroundSize: 'cover',
+						backgroundPosition: 'center',
+						backgroundRepeat: 'no-repeat'
+					}}
+				>
+					{/* Content container within the background */}
+					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0 relative z-10">
+						{/* Video + Description Card */}
+						<div className="bg-white rounded-xl shadow-lg p-6 md:p-12 mb-24 relative overflow-hidden">
+							{/* Subtle decorative compass on right side */}
+							<div className="hidden md:block absolute -right-10 top-1/2 -translate-y-1/2 opacity-[0.08] pointer-events-none select-none">
+								<div className="w-[520px] h-[520px] bg-[radial-gradient(circle_at_center,#C9972C33,transparent_70%)] rounded-full" />
 							</div>
-						);
-					})()}
+							{course.trailerUrl && (
+								<div className="relative z-10 max-w-4xl mx-auto">
+									<DropboxVideo
+										dropboxUrl={course.trailerUrl}
+										title={course.title}
+										thumbnailUrl={heroImage}
+										className="w-full aspect-video rounded-xl overflow-hidden"
+									/>
+								</div>
+							)}
+							{(() => {
+								// Normalize description for consistent layout; strip leading title line if duplicated inside description text
+								let desc = course.description || '';
+								if (desc.startsWith(course.title)) {
+									// remove the title line and any following blank lines
+									desc = desc.replace(new RegExp(`^${course.title}\\s*\n+`), '');
+								}
+								return (
+									<div className={`relative z-10 max-w-5xl mx-auto space-y-6 ${course.trailerUrl ? 'mt-10' : ''}`}>
+										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
+										{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
+										<div className="pt-2">
+											<Link href="#program" className="inline-block">
+												<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
+											</Link>
+										</div>
+									</div>
+								);
+							})()}
+						</div>
+					</div>
 				</div>
 
 				{/* Program Outline / Lessons */}
 				<section id="program" className="mb-24">
-					<h3 className="font-crimson font-bold text-3xl md:text-4xl text-pursuit-navy mb-12 text-center">Explore the Program</h3>
-					<LessonsList sections={course.sections || []} courseTitle={course.title} />
-				</section>
-
-				{/* Placeholder for future lessons / resources */}
-				<section className="mb-24">
-					<div className="bg-white rounded-xl shadow p-10 text-center text-gray-500 text-sm">Lesson list and resources coming soon.</div>
+					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+						<h3 className="font-crimson font-bold text-3xl md:text-4xl text-pursuit-navy mb-12 text-center">Explore the Program</h3>
+						<LessonsList sections={course.sections || []} courseTitle={course.title} />
+					</div>
 				</section>
 
 				{/* Presenter Section */}

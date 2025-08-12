@@ -20,6 +20,7 @@ export interface Course {
 	title: string;
 	image: string; // primary/card image
 	heroImage?: string; // optional distinct hero image
+	heroBackgroundImage?: string; // optional background image for hero section
 	description?: string;
 	tagline?: string;
 	trailerUrl?: string; // optional Dropbox trailer video
@@ -37,6 +38,7 @@ export const courses: Course[] = [
 		professorDisplay: 'Dr. Gerald Boersma',
 		title: 'The Life and Teachings of St. Augustine',
 		heroImage: '/images/geral-course.jpg',
+		heroBackgroundImage: '/images/hero-backround.png',
 		description: `Dive into "The Life and Teachings of St. Augustine" with Dr. Gerald Boersma, esteemed Professor of Theology at Ave Maria University. An expert on Augustine and Thomas Aquinas, Dr. Boersma's course illuminates Augustine's transformative theology and influential writings. Leveraging insights from his acclaimed book, "Augustine’s Early Theology of Image," and numerous scholarly works, Dr. Boersma offers a captivating exploration of Augustine's life and legacy. This course provides a concise yet profound journey through the teachings of one of Christianity’s pivotal figures, guided by a leading authority in the field.`,
 		trailerUrl: 'https://www.dropbox.com/scl/fi/4d5s9zqikr4e5yoa6d5r1/Boersma-Trailer.mp4?rlkey=v6ezog7uu7hq3fhg8umjtzoe9&st=4l5soiwe&dl=0',
 		sections: [
@@ -52,13 +54,14 @@ export const courses: Course[] = [
 		presenterBio: 'Gerald P. Boersma is Professor of Theology at Ave Maria University and Humboldt Fellow at the University of Tübingen. Boersma is a Catholic systematic theologian whose writings focus especially on the thought of Augustine and Thomas Aquinas. He is author of "Augustine\'s Early Theology of Image" (Oxford, 2016) and numerous essays as journal articles and book chapters devoted to theology, philosophy, and literary criticism. Prior to coming to Ave Maria University, he taught for five years at St. Bonaventure University. He has held fellowships at the Villanova University and the University of Tübingen.',
 		presenterImage: '/images/geral-course.jpg'
 	},
-	{ id: 2, slug: 'athletics-and-the-virtues', image: '/images/patterson-course.jpg', professor: 'COACH JOE PATTERSON', professorDisplay: 'Coach Joe Patterson', title: 'Athletics and the Virtues' },
-	{ id: 3, slug: 'pro-life-rights-natural-law-and-catholic-thought', image: '/images/McGuire-course.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'Pro-life: Rights Natural Law, and Catholic Thought' },
-	{ id: 4, slug: 'rise-of-american-politics', image: '/images/Michael-course.jpg', professor: 'DR. MICHAEL BREIDENBACH', professorDisplay: 'Dr. Michael Breidenbach', title: 'The Rise of American Politics' },
+	{ id: 2, slug: 'athletics-and-the-virtues', image: '/images/patterson-course.jpg', heroImage: '/images/patterson-course.jpg', professor: 'COACH JOE PATTERSON', professorDisplay: 'Coach Joe Patterson', title: 'Athletics and the Virtues' },
+	{ id: 3, slug: 'pro-life-rights-natural-law-and-catholic-thought', image: '/images/McGuire-course.jpg', heroImage: '/images/McGuire-course.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'Pro-life: Rights Natural Law, and Catholic Thought' },
+	{ id: 4, slug: 'rise-of-american-politics', image: '/images/Michael-course.jpg', heroImage: '/images/Michael-course.jpg', professor: 'DR. MICHAEL BREIDENBACH', professorDisplay: 'Dr. Michael Breidenbach', title: 'The Rise of American Politics' },
 	{
 		id: 5,
 		slug: 'catholic-bioethics-current-issues',
 		image: '/images/DIann-course.jpg',
+		heroImage: '/images/DIannPort-Enhanced-SR.jpg',
 		professor: 'DR. DIANN ECRET',
 		professorDisplay: 'Dr. Diann Ecret',
 		title: 'Catholic Bioethics: Current Issues',
@@ -76,6 +79,7 @@ export const courses: Course[] = [
 		id: 6,
 		slug: 'introduction-to-computer-science',
 		image: '/images/Saverio-course.jpg',
+		heroImage: '/images/Saverio-course.jpg',
 		professor: 'DR. SAVERIO PERUGINI',
 		professorDisplay: 'Dr. Saverio Perugini',
 		title: 'An Introduction to Computer Science',
@@ -98,16 +102,16 @@ export const courses: Course[] = [
 			{ order: 15, title: 'Outline and Additional Resources', summary: 'Computer Science Guidebook.', type: 'reading', resourceUrl: '/courses/introduction-to-computer-science/guide.pdf' }
 		]
 	},
-	{ id: 7, slug: 'introduction-to-mariology', image: '/images/mark-course.jpg', professor: 'DR. MARK MIRAVALLE', professorDisplay: 'Dr. Mark Miravalle', title: 'Introduction to Mariology' },
-	{ id: 8, slug: 'introduction-to-sacramental-theology', image: '/images/Roger-course.jpg', professor: 'DR. ROGER NUTT', professorDisplay: 'Dr. Roger Nutt', title: 'Introduction to Sacramental Theology' },
-	{ id: 9, slug: 'stewarding-the-environment', image: '/images/sheperd-course.jpg', professor: 'DR. SAMUEL SHEPARD', professorDisplay: 'Dr. Samuel Shepard', title: 'Stewarding the Environment' },
-	{ id: 10, slug: 'foundation-of-america-us-constitution', image: '/images/McGuire-course.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'The Foundation of America: U.S. Constitution' },
-	{ id: 11, slug: 'genius-of-gk-chesterton', image: '/images/Joseph-course.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of G.K. Chesterton' },
-	{ id: 12, slug: 'genius-of-jrr-tolkien', image: '/images/Joseph-course.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of J.R.R. Tolkien' },
-	{ id: 13, slug: 'philosophy-of-motherhood', image: '/images/James-course.jpg', professor: 'DR. JANICE CHIK BREIDENBACH', professorDisplay: 'Dr. Janice Chik Breidenbach', title: 'The Philosophy of Motherhood' },
-	{ id: 14, slug: 'wisdom-of-cs-lewis', image: '/images/Dauphinais-course.jpg', professor: 'DR. MICHEL DAUPHINAIS', professorDisplay: 'Dr. Michel Dauphinais', title: 'The Wisdom of C.S. Lewis' },
-	{ id: 15, slug: 'wisdom-of-fulton-sheen', image: '/images/James-course.jpg', professor: 'DR. JAMES PATTERSON', professorDisplay: 'Dr. James Patterson', title: 'The Wisdom of Fulton Sheen' },
-	{ id: 16, slug: 'virtues-and-leadership-in-business', image: '/images/Durand-course.jpg', professor: 'DAVE DURAND', professorDisplay: 'Dave Durand', title: 'The Virtues and Leadership in Business' }
+	{ id: 7, slug: 'introduction-to-mariology', image: '/images/mark-course.jpg', heroImage: '/images/mark-course.jpg', professor: 'DR. MARK MIRAVALLE', professorDisplay: 'Dr. Mark Miravalle', title: 'Introduction to Mariology' },
+	{ id: 8, slug: 'introduction-to-sacramental-theology', image: '/images/Roger-course.jpg', heroImage: '/images/RogerNuttBCam-Enhanced-SR.jpg', professor: 'DR. ROGER NUTT', professorDisplay: 'Dr. Roger Nutt', title: 'Introduction to Sacramental Theology' },
+	{ id: 9, slug: 'stewarding-the-environment', image: '/images/sheperd-course.jpg', heroImage: '/images/ShephardBCam-Enhanced-SR.jpg', professor: 'DR. SAMUEL SHEPARD', professorDisplay: 'Dr. Samuel Shepard', title: 'Stewarding the Environment' },
+	{ id: 10, slug: 'foundation-of-america-us-constitution', image: '/images/McGuire-course.jpg', heroImage: '/images/SeannaBCam-Enhanced-SR.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'The Foundation of America: U.S. Constitution' },
+	{ id: 11, slug: 'genius-of-gk-chesterton', image: '/images/Joseph-course.jpg', heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of G.K. Chesterton' },
+	{ id: 12, slug: 'genius-of-jrr-tolkien', image: '/images/Joseph-course.jpg', heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of J.R.R. Tolkien' },
+	{ id: 13, slug: 'philosophy-of-motherhood', image: '/images/James-course.jpg', heroImage: '/images/JaniceBCam-Enhanced-SR.jpg', professor: 'DR. JANICE CHIK BREIDENBACH', professorDisplay: 'Dr. Janice Chik Breidenbach', title: 'The Philosophy of Motherhood' },
+	{ id: 14, slug: 'wisdom-of-cs-lewis', image: '/images/Dauphinais-course.jpg', heroImage: '/images/DauphinaisBCam-Enhanced-SR.jpg', professor: 'DR. MICHEL DAUPHINAIS', professorDisplay: 'Dr. Michel Dauphinais', title: 'The Wisdom of C.S. Lewis' },
+	{ id: 15, slug: 'wisdom-of-fulton-sheen', image: '/images/James-course.jpg', heroImage: '/images/James-course.jpg', professor: 'DR. JAMES PATTERSON', professorDisplay: 'Dr. James Patterson', title: 'The Wisdom of Fulton Sheen' },
+	{ id: 16, slug: 'virtues-and-leadership-in-business', image: '/images/Durand-course.jpg', heroImage: '/images/Durand-course.jpg', professor: 'DAVE DURAND', professorDisplay: 'Dave Durand', title: 'The Virtues and Leadership in Business' }
 ];
 
 export function getCourseBySlug(slug: string) {
