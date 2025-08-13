@@ -253,10 +253,104 @@ Embark on this illuminating journey and appreciate the beauty and interconnected
 Professional Webpage: <a href="https://www.samuelshephard.com" target="_blank" rel="noopener noreferrer" class="text-pursuit-navy hover:text-pursuit-gold transition-colors">Samuel Shephard | samuelshephard.com</a>`,
 		presenterImage: '/images/ShephardBCam-Enhanced-SR.jpg'
 	},
-	{ id: 10, slug: 'foundation-of-america-us-constitution', image: '/images/McGuire-course.jpg', heroImage: '/images/SeannaBCam-Enhanced-SR.jpg', professor: 'DR. SEANA MCGUIRE (SEGRUE)', professorDisplay: 'Dr. Seana McGuire (Segrue)', title: 'The Foundation of America: U.S. Constitution' },
-	{ id: 11, slug: 'genius-of-gk-chesterton', image: '/images/Joseph-course.jpg', heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of G.K. Chesterton' },
-	{ id: 12, slug: 'genius-of-jrr-tolkien', image: '/images/Joseph-course.jpg', heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', professor: 'JOSEPH PEARCE', professorDisplay: 'Joseph Pearce', title: 'The Genius of J.R.R. Tolkien' },
-	{ id: 13, slug: 'philosophy-of-motherhood', image: '/images/James-course.jpg', heroImage: '/images/JaniceBCam-Enhanced-SR.jpg', professor: 'DR. JANICE CHIK BREIDENBACH', professorDisplay: 'Dr. Janice Chik Breidenbach', title: 'The Philosophy of Motherhood' },
+	{ 
+		id: 10, 
+		slug: 'foundation-of-america-us-constitution', 
+		image: '/images/McGuire-course.jpg', 
+		heroImage: '/images/SeannaBCam-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/foundation-hero.jpeg',
+		exploreImage: '/images/mcguire-program.jpeg',
+		professor: 'DR. SEANA MCGUIRE (SEGRUE)', 
+		professorDisplay: 'Dr. Seana McGuire (Segrue)', 
+		title: 'The Foundations of America: U.S. Constitution',
+		description: `Embark on a journey exploring the U.S. Constitution, examining its key figures, pivotal events, and unpacking the vital documents from America's founding. Enrich your understanding of these historic achievements while discovering how they remain relevant and meaningful in the context of modern-day United States politics.
+
+Join Dr. McGuire (Sugrue) as she expertly guides you through this exploration of the U.S. Constitution, providing invaluable insight into America's enduring legacy.`,
+		sections: [
+			{ order: 1, title: 'The Ancient and the Founders', summary: '', duration: '14:28', type: 'video' },
+			{ order: 2, title: 'The Declaration of Independence and the U.S. Constitution', summary: '', duration: '15:50', type: 'video' },
+			{ order: 3, title: 'The Big Picture', summary: '', duration: '18:43', type: 'video' },
+			{ order: 4, title: 'The Bill of Rights', summary: '', duration: '17:28', type: 'video' },
+			{ order: 5, title: 'The 14th Amendment', summary: '', duration: '16:36', type: 'video' },
+			{ order: 6, title: 'The Constitution and The Supreme Court', summary: '', duration: '12:50', type: 'video' },
+			{ order: 7, title: 'Conclusion', summary: '', duration: '04:33', type: 'video' },
+			{ order: 8, title: 'Outline and Further Reading', summary: '', type: 'reading', resourceUrl: '/courses/foundation-of-america-us-constitution/guide.pdf' }
+		],
+		presenterBio: `Dr. Seana McGuire (Sugrue) is the Ambassador Michael Novak Chair of Politics at Ave Maria University and previously served as the associate director of the James Madison Program at Princeton University. With over two decades of experience, Dr. McGuire teaches constitutional law and civil liberties, specializing in separation of powers, religious liberty, marriage, civil society, and civil disobedience. As a highly regarded professor, her guidance and mentorship have aided many students in pursuing law and public service careers. She holds degrees from the University of Ottawa and McGill University and is also a proud mother of three talented young women.`,
+		presenterImage: '/images/SeannaBCam-Enhanced-SR.jpg'
+	},
+	{ 
+		id: 11, 
+		slug: 'genius-of-gk-chesterton', 
+		image: '/images/Joseph-course.jpg', 
+		heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/GK-hero.jpeg',
+		exploreImage: '/images/GK-hero.jpeg',
+		professor: 'JOSEPH PEARCE', 
+		professorDisplay: 'Joseph Pearce', 
+		title: 'The Genius of G.K. Chesterton',
+		description: `Embark on an enriching exploration of one of the greatest contemporary thinkers with Joseph Pearce in his online course, "The Genius of G.K. Chesterton." This fascinating journey weaves through the life, works, and enduring impact of G.K. Chesterton.
+
+Through this course, deepen your understanding of Chesterton by delving into his intellectual legacy, his prolific works, and his unwavering influence on modern thinking. With the guidance of Joseph Pearce, uncover the inexhaustible genius that makes Chesterton an enduring icon in the landscape of contemporary thought.`,
+		sections: [
+			{ order: 1, title: 'His Life and Legacy', summary: '', duration: '19:10', type: 'video' },
+			{ order: 2, title: 'The Essayist', summary: '', duration: '21:52', type: 'video' },
+			{ order: 3, title: 'The Poet', summary: '', duration: '22:48', type: 'video' },
+			{ order: 4, title: 'The Novelist', summary: '', duration: '21:05', type: 'video' },
+			{ order: 5, title: 'The Apologist', summary: '', duration: '22:29', type: 'video' },
+			{ order: 6, title: 'The Everlasting Man', summary: '', duration: '19:20', type: 'video' },
+			{ order: 7, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/genius-of-gk-chesterton/guide.pdf' }
+		],
+		presenterBio: `Prof. Joseph Pearce is a visiting professor of literature and a renowned author with many internationally acclaimed bestsellers, including works such as "The Quest for Shakespeare," "Tolkien: Man and Myth," and "C.S. Lewis and the Catholic Church." His books have been translated into multiple languages, including Spanish, Portuguese, French, Dutch, Italian, Korean, Mandarin, Croatian, and Polish. Pearce is not only an accomplished author, but also a host of two 13-part television series covering Shakespeare on EWTN, as well as a writer and presenter of documentaries discussing Catholicism in "The Lord of the Rings" and "The Hobbit." His talents extend beyond literature, with his off-Broadway performance in the verse drama, "Death Comes for the War Poets," having received critical acclaim. Pearce is a frequent participant and lecturer at various literary events held in the United States, Canada, Britain, Europe, Africa, and South America. He is also the editor of the "St. Austin Review" and series editor of the Ignatius Critical Editions. Additionally, he is a senior instructor at Homeschool Connections and senior contributor at "Imaginative Conservative and Crisis Magazine."`,
+		presenterImage: '/images/JosephPearceBCam-Enhanced-SR.jpg'
+	},
+	{ 
+		id: 12, 
+		slug: 'genius-of-jrr-tolkien', 
+		image: '/images/Joseph-course.jpg', 
+		heroImage: '/images/JosephPearceBCam-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/GK-hero.jpeg',
+		exploreImage: '/images/GK-hero.jpeg',
+		professor: 'JOSEPH PEARCE', 
+		professorDisplay: 'Joseph Pearce', 
+		title: 'The Genius of J.R.R. Tolkien',
+		description: `Embark on a captivating journey into the world of J.R.R. Tolkien with Joseph Pearce as your guide. Join "The Genius of J.R.R. Tolkien" course and delve into the rich tapestry of Tolkien's life, theology, and timeless works. Uncover the hidden treasures of "The Lord of the Rings" as you explore the connections between its characters and biblical figures, revealing profound symbolism and spiritual insight.
+
+Discover the enchanting tale of "The Hobbit" and its wisdom on humanity's relationship with God. Pearce's illuminating course offers valuable insights into Tolkien's narratives, deepening your understanding of the human experience and our connection to the divine.`,
+		sections: [
+			{ order: 1, title: 'Who is Tolkien?', summary: '', duration: '20:48', type: 'video' },
+			{ order: 2, title: 'A MythUnderstood Man', summary: '', duration: '23:15', type: 'video' },
+			{ order: 3, title: 'The Hobbit as a Parable', summary: '', duration: '19:17', type: 'video' },
+			{ order: 4, title: 'Divine Comedy and Divine Epic', summary: '', duration: '19:03', type: 'video' },
+			{ order: 5, title: 'Finding Christ in the Lord of the Rings', summary: '', duration: '18:54', type: 'video' },
+			{ order: 6, title: 'Finding Ourselves in the Lord of the Rings', summary: '', duration: '23:03', type: 'video' },
+			{ order: 7, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/genius-of-jrr-tolkien/guide.pdf' }
+		],
+		presenterBio: `Prof. Joseph Pearce is a visiting professor of literature and a renowned author with many internationally acclaimed bestsellers, including works such as "The Quest for Shakespeare," "Tolkien: Man and Myth," and "C.S. Lewis and the Catholic Church." His books have been translated into multiple languages, including Spanish, Portuguese, French, Dutch, Italian, Korean, Mandarin, Croatian, and Polish. Pearce is not only an accomplished author, but also a host of two 13-part television series covering Shakespeare on EWTN, as well as a writer and presenter of documentaries discussing Catholicism in "The Lord of the Rings" and "The Hobbit." His talents extend beyond literature, with his off-Broadway performance in the verse drama, "Death Comes for the War Poets," having received critical acclaim. Pearce is a frequent participant and lecturer at various literary events held in the United States, Canada, Britain, Europe, Africa, and South America. He is also the editor of the "St. Austin Review" and series editor of the Ignatius Critical Editions. Additionally, he is a senior instructor at Homeschool Connections and senior contributor at "Imaginative Conservative and Crisis Magazine."`,
+		presenterImage: '/images/JosephPearceBCam-Enhanced-SR.jpg'
+	},
+	{ 
+		id: 13, 
+		slug: 'philosophy-of-motherhood', 
+		image: '/images/JanicePort-Enhanced-SR.jpg', 
+		heroImage: '/images/JanicePort-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/motherhood-hero.jpeg',
+		exploreImage: '/images/motherhood-hero.jpeg',
+		professor: 'DR. JANICE CHIK BREIDENBACH', 
+		professorDisplay: 'Dr. Janice Chik Breidenbach', 
+		title: 'The Philosophy of Motherhood',
+		description: `Join Dr. Janice Chik Breidenbach in a profound exploration of motherhood, gaining unique insights into human nature and existence. Discover the evolving societal perceptions of motherhood and unravel its mysteries. Drawing from philosophical wisdom, Dr. Breidenbach will guide you in recognizing the beauty and significance of ordinary moments and how motherhood leads us to God. Explore how motherhood shapes our understanding of ourselves, others, and the world.
+
+Embark on a remarkable journey to gain invaluable insight into the importance of motherhood as a gateway to understanding our place in God's plan.`,
+		sections: [
+			{ order: 1, title: 'Motherhood as a Philosophy', summary: '', duration: '06:00', type: 'video' },
+			{ order: 2, title: 'Control, Commodification, and Careerism', summary: '', duration: '23:08', type: 'video' },
+			{ order: 3, title: 'The Theology of Motherhood', summary: '', duration: '11:54', type: 'video' },
+			{ order: 4, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/philosophy-of-motherhood/guide.pdf' }
+		],
+		presenterBio: `Dr. Janice Chik Breidenbach is an associate professor of philosophy at Ave Maria University with research affiliations at Oxford and UPenn. She is working on a book entitled "How Many We Are: Assembly Among the Expressive Freedoms" and has published numerous articles on the topic. Dr. Breidenbach teaches and speaks on logic, metaphysics, aesthetics, ethics, human action, and the philosophy of motherhood. She holds degrees in philosophy, public policy, and music performance. Outside of work, Dr. Breidenbach enjoys homemaking, wine tasting, and playing music for her son, Paul Thomas.`,
+		presenterImage: '/images/JanicePort-Enhanced-SR.jpg'
+	},
 	{ id: 14, slug: 'wisdom-of-cs-lewis', image: '/images/Dauphinais-course.jpg', heroImage: '/images/DauphinaisBCam-Enhanced-SR.jpg', professor: 'DR. MICHEL DAUPHINAIS', professorDisplay: 'Dr. Michel Dauphinais', title: 'The Wisdom of C.S. Lewis' },
 	{ id: 15, slug: 'wisdom-of-fulton-sheen', image: '/images/James-course.jpg', heroImage: '/images/James-course.jpg', professor: 'DR. JAMES PATTERSON', professorDisplay: 'Dr. James Patterson', title: 'The Wisdom of Fulton Sheen' },
 	{ id: 16, slug: 'virtues-and-leadership-in-business', image: '/images/Durand-course.jpg', heroImage: '/images/Durand-course.jpg', professor: 'DAVE DURAND', professorDisplay: 'Dave Durand', title: 'The Virtues and Leadership in Business' }
