@@ -365,12 +365,12 @@ Embark on a remarkable journey to gain invaluable insight into the importance of
 
 Embark on this illuminating voyage and gain valuable insights into the multi-dimensional teachings of C.S. Lewis, which continue to inspire people today.`,
 		sections: [
-			{ order: 1, title: 'The Weight of Glory', summary: '', duration: '29:30', type: 'video' },
-			{ order: 2, title: 'Mere Christianity', summary: '', duration: '29:52', type: 'video' },
-			{ order: 3, title: 'Miracles', summary: '', duration: '33:24', type: 'video' },
-			{ order: 4, title: 'The Problem of Pain', summary: '', duration: '35:44', type: 'video' },
-			{ order: 5, title: 'The Chronicles of Narnia', summary: '', duration: '31:58', type: 'video' },
-			{ order: 6, title: 'The Voyage of the Dawn Treader', summary: '', duration: '32:09', type: 'video' },
+			{ order: 1, title: 'The Weight of Glory', summary: '', duration: '29:30', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/5rehfty2s4hzjotcvz683/Michael-Dauphinais-Course-1-bryan.mp4?rlkey=zp0hqru82xgzg3lw04nkxy5r3&st=u4iuyalx&dl=0' },
+			{ order: 2, title: 'Mere Christianity', summary: '', duration: '29:52', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/h54n9j0og6ym7xim5ecom/Michael-Dauphinais-Course-2-bryan.mp4?rlkey=2uxjtqozuqx67aiz8ye7ly522&st=9f58di0q&dl=0' },
+			{ order: 3, title: 'Miracles', summary: '', duration: '33:24', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/6mk2sy3m8me4i48xstkw1/Michael-Dauphinais-Course-3-bryan.mp4?rlkey=xbq95bkp1qt28o2wul6qwwut5&st=5vj49ar5&dl=0' },
+			{ order: 4, title: 'The Problem of Pain', summary: '', duration: '35:44', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/awpo045wfytg6p1a2y1xp/Michael-Dauphinais-Course-4-bryan.mp4?rlkey=ivzepmx8rvrnltt4mrpv1uocj&st=qahj0hgd&dl=0' },
+			{ order: 5, title: 'The Chronicles of Narnia', summary: '', duration: '31:58', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/2e0132n053lwc7vdcp00c/Michael-Dauphinais-Course-5-bryan.mp4?rlkey=zlq5kori8hvobri3cwog5gvl7&st=gn051dtg&dl=0' },
+			{ order: 6, title: 'The Voyage of the Dawn Treader', summary: '', duration: '32:09', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/xy968yyynsbknxoq5idr6/Michael-Dauphinais-Course-6-bryan.mp4?rlkey=2hheq4nod3tjh70irngskc0d4&st=44ffxek5&dl=0' },
 			{ order: 7, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/wisdom-of-cs-lewis/guide.pdf' }
 		],
 		presenterBio: `Dr. Michael A. Dauphinais serves as the Fr. Matthew Lamb professor of Catholic theology and the co-director of the Aquinas Center for Theological Renewal at Ave Maria University. With degrees from Duke University and the University of Notre Dame, he has written and edited numerous scholarly articles and books on Thomas Aquinas, the Bible, and Catholic theology. He recently co-authored "Wisdom of the Word: Biblical Answers to Ten Questions about Catholicism." Apart from teaching, he frequently speaks and hosts "The Catholic Theology Show" podcast. Married to his wife, Nancy, for nearly 30 years, he is a grateful revert to the Catholic Church.`,
@@ -390,9 +390,9 @@ Embark on this illuminating voyage and gain valuable insights into the multi-dim
 
 Delve into this fascinating course and be inspired by Archbishop Fulton Sheen's extraordinary legacy.`,
 		sections: [
-			{ order: 1, title: 'Who was Fulton J. Sheen?', summary: '', duration: '16:32', type: 'video' },
-			{ order: 2, title: 'A Criticism of Liberalism and Capitalism', summary: '', duration: '20:31', type: 'video' },
-			{ order: 3, title: 'Sheen\'s Americanism / The Judeo-Christian Consensus', summary: '', duration: '21:04', type: 'video' },
+			{ order: 1, title: 'Who was Fulton J. Sheen?', summary: '', duration: '16:32', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/kgcdvorh3rvgdakedvm0x/James-Patterson-Course-1-Bryan.mp4?rlkey=amqisiy79s4c0cdawkiizjyrb&st=tng9rthe&dl=0' },
+			{ order: 2, title: 'A Criticism of Liberalism and Capitalism', summary: '', duration: '20:31', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/dwg2h9zvu5wsu63lhetvs/James-Patterson-Course-2-Bryan.mp4?rlkey=f3wi62ofj2bzjfvjkmtpydyht&st=npr8y9zg&dl=0' },
+			{ order: 3, title: 'Sheen\'s Americanism / The Judeo-Christian Consensus', summary: '', duration: '21:04', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/eu8ndkr67614iyp9bna0h/James-Patterson-Course-3-Bryan.mp4?rlkey=qxzdtruj8jmyxz5osw9mqaqyw&st=9e85gyjc&dl=0' },
 			{ order: 4, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/wisdom-of-fulton-sheen/guide.pdf' }
 		],
 		presenterBio: `Dr. James Patterson is an associate professor and chair of the politics department at Ave Maria University, with degrees from the University of Houston and the University of Virginia. He is also a fellow at the Center for Religion, Culture, and Democracy and the Institute of Human Ecology at Catholic University of America. As president of the Ciceronian Society and a contributing editor to "Law & Liberty," his research focuses on religion, race, and American political development. He published "Religion in the Public Square: Sheen, King, Falwell" in 2019 and has contributed to various scholarly and popular publications. Dr. Patterson previously held positions at Duke, Princeton, Gettysburg College, and Hampden-Sydney College. He resides in Ave Maria, Florida, with his wife and four children.`,

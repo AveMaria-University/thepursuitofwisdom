@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import DropboxVideo from '@/components/DropboxVideo'
+import { courses } from '@/data/courses'
 
 export default function HomePage() {
   return (
@@ -250,57 +251,81 @@ export default function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Course 1: Dr. Saverio Perugini */}
+            {/* Course 1: Dr. Gerald Boersma - Augustine */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
-              <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Dr. Perugini Image</span>
+              <div className="aspect-video bg-gray-200 overflow-hidden">
+                <Image
+                  src={courses[0].image}
+                  alt={courses[0].professor}
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-8 text-center flex-1 flex flex-col">
                 <p className="text-sm text-pursuit-gold font-semibold mb-4 uppercase tracking-wide">
-                  DR. SAVERIO PERUGINI
+                  {courses[0].professor}
                 </p>
                 <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-6 leading-tight flex-1 flex items-center justify-center">
-                  An Introduction to Computer Science
+                  {courses[0].title}
                 </h3>
-                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
-                  PURSUE WISDOM
-                </button>
+                <Link href={`/courses/${courses[0].slug}`}>
+                  <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
+                    PURSUE WISDOM
+                  </button>
+                </Link>
               </div>
             </div>
 
-            {/* Course 2: Dr. Gerald Boersma */}
+            {/* Course 2: Coach Joe Patterson - Athletics */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
-              <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Dr. Boersma Image</span>
+              <div className="aspect-video bg-gray-200 overflow-hidden">
+                <Image
+                  src={courses[1].image}
+                  alt={courses[1].professor}
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-8 text-center flex-1 flex flex-col">
                 <p className="text-sm text-pursuit-gold font-semibold mb-4 uppercase tracking-wide">
-                  DR. GERALD BOERSMA
+                  {courses[1].professor}
                 </p>
                 <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-6 leading-tight flex-1 flex items-center justify-center">
-                  The Life and Teachings of St. Augustine
+                  {courses[1].title}
                 </h3>
-                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
-                  PURSUE WISDOM
-                </button>
+                <Link href={`/courses/${courses[1].slug}`}>
+                  <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
+                    PURSUE WISDOM
+                  </button>
+                </Link>
               </div>
             </div>
 
-            {/* Course 3: Coach Joe Patterson */}
+            {/* Course 3: Dr. Saverio Perugini - Computer Science */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
-              <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">Coach Patterson Image</span>
+              <div className="aspect-video bg-gray-200 overflow-hidden">
+                <Image
+                  src={courses.find(c => c.slug === 'introduction-to-computer-science')?.image || '/images/Saverio-course.jpg'}
+                  alt={courses.find(c => c.slug === 'introduction-to-computer-science')?.professor || 'DR. SAVERIO PERUGINI'}
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-8 text-center flex-1 flex flex-col">
                 <p className="text-sm text-pursuit-gold font-semibold mb-4 uppercase tracking-wide">
-                  COACH JOE PATTERSON
+                  {courses.find(c => c.slug === 'introduction-to-computer-science')?.professor || 'DR. SAVERIO PERUGINI'}
                 </p>
                 <h3 className="text-2xl font-bold font-crimson text-pursuit-navy mb-6 leading-tight flex-1 flex items-center justify-center">
-                  Athletics and the Virtues
+                  {courses.find(c => c.slug === 'introduction-to-computer-science')?.title || 'An Introduction to Computer Science'}
                 </h3>
-                <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
-                  PURSUE WISDOM
-                </button>
+                <Link href={`/courses/${courses.find(c => c.slug === 'introduction-to-computer-science')?.slug || 'introduction-to-computer-science'}`}>
+                  <button className="w-full px-8 py-4 bg-pursuit-gold text-white font-semibold text-lg rounded-lg hover:bg-yellow-600 transition-colors mt-auto">
+                    PURSUE WISDOM
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
