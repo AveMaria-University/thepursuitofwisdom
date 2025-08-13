@@ -351,9 +351,77 @@ Embark on a remarkable journey to gain invaluable insight into the importance of
 		presenterBio: `Dr. Janice Chik Breidenbach is an associate professor of philosophy at Ave Maria University with research affiliations at Oxford and UPenn. She is working on a book entitled "How Many We Are: Assembly Among the Expressive Freedoms" and has published numerous articles on the topic. Dr. Breidenbach teaches and speaks on logic, metaphysics, aesthetics, ethics, human action, and the philosophy of motherhood. She holds degrees in philosophy, public policy, and music performance. Outside of work, Dr. Breidenbach enjoys homemaking, wine tasting, and playing music for her son, Paul Thomas.`,
 		presenterImage: '/images/JanicePort-Enhanced-SR.jpg'
 	},
-	{ id: 14, slug: 'wisdom-of-cs-lewis', image: '/images/Dauphinais-course.jpg', heroImage: '/images/DauphinaisBCam-Enhanced-SR.jpg', professor: 'DR. MICHEL DAUPHINAIS', professorDisplay: 'Dr. Michel Dauphinais', title: 'The Wisdom of C.S. Lewis' },
-	{ id: 15, slug: 'wisdom-of-fulton-sheen', image: '/images/James-course.jpg', heroImage: '/images/James-course.jpg', professor: 'DR. JAMES PATTERSON', professorDisplay: 'Dr. James Patterson', title: 'The Wisdom of Fulton Sheen' },
-	{ id: 16, slug: 'virtues-and-leadership-in-business', image: '/images/Durand-course.jpg', heroImage: '/images/Durand-course.jpg', professor: 'DAVE DURAND', professorDisplay: 'Dave Durand', title: 'The Virtues and Leadership in Business' }
+	{ 
+		id: 14, 
+		slug: 'wisdom-of-cs-lewis', 
+		image: '/images/Dauphinais-course.jpg', 
+		heroImage: '/images/DauphinaisBCam-Enhanced-SR.jpg', 
+		heroBackgroundImage: '/images/Lewis-hero.jpeg',
+		exploreImage: '/images/Lewis-hero.jpeg',
+		professor: 'DR. MICHEL DAUPHINAIS', 
+		professorDisplay: 'Dr. Michel Dauphinais', 
+		title: 'The Wisdom of C.S. Lewis',
+		description: `Join Dr. Michael Dauphinais in a journey through the life and thought of C.S. Lewis. Discover Lewis' unique perspective and fresh insights into the world, ourselves, and God. Lewis viewed the world with imagination and truth, and after his conversion, he studied the great Fathers of the Church, interpreting their theologies and ideas, seeking to make sense of it all. Dr. Dauphinais leads you on this path of discovery, exploring the wisdom of one of the greatest authors of the 20th century.
+
+Embark on this illuminating voyage and gain valuable insights into the multi-dimensional teachings of C.S. Lewis, which continue to inspire people today.`,
+		sections: [
+			{ order: 1, title: 'The Weight of Glory', summary: '', duration: '29:30', type: 'video' },
+			{ order: 2, title: 'Mere Christianity', summary: '', duration: '29:52', type: 'video' },
+			{ order: 3, title: 'Miracles', summary: '', duration: '33:24', type: 'video' },
+			{ order: 4, title: 'The Problem of Pain', summary: '', duration: '35:44', type: 'video' },
+			{ order: 5, title: 'The Chronicles of Narnia', summary: '', duration: '31:58', type: 'video' },
+			{ order: 6, title: 'The Voyage of the Dawn Treader', summary: '', duration: '32:09', type: 'video' },
+			{ order: 7, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/wisdom-of-cs-lewis/guide.pdf' }
+		],
+		presenterBio: `Dr. Michael A. Dauphinais serves as the Fr. Matthew Lamb professor of Catholic theology and the co-director of the Aquinas Center for Theological Renewal at Ave Maria University. With degrees from Duke University and the University of Notre Dame, he has written and edited numerous scholarly articles and books on Thomas Aquinas, the Bible, and Catholic theology. He recently co-authored "Wisdom of the Word: Biblical Answers to Ten Questions about Catholicism." Apart from teaching, he frequently speaks and hosts "The Catholic Theology Show" podcast. Married to his wife, Nancy, for nearly 30 years, he is a grateful revert to the Catholic Church.`,
+		presenterImage: '/images/DauphinaisBCam-Enhanced-SR.jpg'
+	},
+	{ 
+		id: 15, 
+		slug: 'wisdom-of-fulton-sheen', 
+		image: '/images/James-course.jpg', 
+		heroImage: '/images/James-course.jpg', 
+		heroBackgroundImage: '/images/fultonsheen-hero.jpeg',
+		exploreImage: '/images/fultonsheen-hero.jpeg',
+		professor: 'DR. JAMES PATTERSON', 
+		professorDisplay: 'Dr. James Patterson', 
+		title: 'The Wisdom of Fulton Sheen',
+		description: `Join Dr. James Patterson in a captivating online video course exploring the life and teachings of Venerable Fulton J. Sheen, a trailblazer in Catholic media. Embark on a journey to understand Sheen's dynamic perspective and gain refreshing insights into his impact on faith, society, and personal growth. Learn how Archbishop Sheen's groundwork in Catholic media communication laid the foundation for future spiritual leaders. Under Dr. Patterson's guidance, discover Archbishop Sheen's enduring wisdom and its relevance in today's world.
+
+Delve into this fascinating course and be inspired by Archbishop Fulton Sheen's extraordinary legacy.`,
+		sections: [
+			{ order: 1, title: 'Who was Fulton J. Sheen?', summary: '', duration: '16:32', type: 'video' },
+			{ order: 2, title: 'A Criticism of Liberalism and Capitalism', summary: '', duration: '20:31', type: 'video' },
+			{ order: 3, title: 'Sheen\'s Americanism / The Judeo-Christian Consensus', summary: '', duration: '21:04', type: 'video' },
+			{ order: 4, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/wisdom-of-fulton-sheen/guide.pdf' }
+		],
+		presenterBio: `Dr. James Patterson is an associate professor and chair of the politics department at Ave Maria University, with degrees from the University of Houston and the University of Virginia. He is also a fellow at the Center for Religion, Culture, and Democracy and the Institute of Human Ecology at Catholic University of America. As president of the Ciceronian Society and a contributing editor to "Law & Liberty," his research focuses on religion, race, and American political development. He published "Religion in the Public Square: Sheen, King, Falwell" in 2019 and has contributed to various scholarly and popular publications. Dr. Patterson previously held positions at Duke, Princeton, Gettysburg College, and Hampden-Sydney College. He resides in Ave Maria, Florida, with his wife and four children.`,
+		presenterImage: '/images/James-course.jpg'
+	},
+	{ 
+		id: 16, 
+		slug: 'virtues-and-leadership-in-business', 
+		image: '/images/Durand-course.jpg', 
+		heroImage: '/images/Durand-course.jpg', 
+		heroBackgroundImage: '/images/business-hero.png',
+		exploreImage: '/images/business-program.jpg',
+		professor: 'DAVE DURAND', 
+		professorDisplay: 'Dave Durand', 
+		title: 'The Virtues and Leadership in Business',
+		description: `Dive into "The Virtues and Leadership in Business" with Dave Durand, seasoned entrepreneur, acclaimed author, and trustee of Ave Maria University, as he unravels the essence of transformational leadership and its grounding in virtue. Having spearheaded Best Version Media to entrepreneurial success and recognized as Glassdoor's most admired CEO three times, Durand couples his extensive real-world experience with profound insights on developing leaders who shape culture and drive influence for the greater good. This course promises to equip aspiring and established leaders alike with the tools to foster exemplary leadership character and inspire a legacy of positive organizational change.`,
+		sections: [
+			{ order: 1, title: 'What is Leadership?', summary: '', duration: '08:47', type: 'video' },
+			{ order: 2, title: 'Principles of Leadership', summary: '', duration: '09:22', type: 'video' },
+			{ order: 3, title: 'Leadership Superpowers', summary: '', duration: '14:39', type: 'video' },
+			{ order: 4, title: 'The Transcendentals', summary: '', duration: '11:17', type: 'video' },
+			{ order: 5, title: 'Building Expertise', summary: '', duration: '07:54', type: 'video' },
+			{ order: 6, title: 'Establishing Culture', summary: '', duration: '07:30', type: 'video' },
+			{ order: 7, title: 'Conclusion', summary: '', duration: '03:16', type: 'video' },
+			{ order: 8, title: 'Discussion Guide', summary: '', type: 'reading' }
+		],
+		presenterBio: `A trustee of Ave Maria University, Dave Durand is a seasoned entrepreneur, acclaimed author of six books, and host of a popular radio/YouTube show. As co-founder and former CEO of Best VersionMedia, he now serves as Executive Chairman, having built and sold businesses with over a billion dollars in combined sales. He is also the CEO of Leading Giants, coaching leaders to enhance their influence and grow their businesses. A father of nine, Dave has been named Glassdoor's most admired CEO three times and was honored as Ernst & Young's Entrepreneur of the Year.`,
+		presenterImage: '/images/Durand-course.jpg'
+	}
 ];
 
 export function getCourseBySlug(slug: string) {
