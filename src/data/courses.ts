@@ -190,12 +190,12 @@ Join this captivating journey through the emergence of American politics from a 
 
 Embark on a transformative journey into the heart of Mariology with Dr. Mark Miravalle's insightful course, "Introduction to Mariology." Explore the profound significance of Mary, the Mother of God, within the Catholic tradition. Delve into the four Marian Dogmas – her Divine Motherhood, Perpetual Virginity, Immaculate Conception, and Assumption – and understand their implications for our faith. Discover the profound role of Mary as our spiritual mother, guiding and interceding for us on our path to Christ. Through Dr. Miravalle's expert guidance, cultivate a deeper appreciation for Mary's unique place in salvation history and her enduring influence on the lives of believers.`,
 		sections: [
-			{ order: 1, title: 'Why Mary and Mariology?', summary: 'Understanding the importance and relevance of Marian studies.', duration: '13:53', type: 'video' },
-			{ order: 2, title: 'The Four Marian Dogmas', summary: 'Exploring Divine Motherhood, Perpetual Virginity, Immaculate Conception, and Assumption.', duration: '22:45', type: 'video' },
-			{ order: 3, title: 'Is Mary Your Mother?', summary: 'Understanding Mary\'s maternal role in the spiritual life.', duration: '23:44', type: 'video' },
-			{ order: 4, title: 'The Three Great Marian Devotions', summary: 'Key devotional practices honoring the Mother of God.', duration: '24:24', type: 'video' },
-			{ order: 5, title: 'The Marian Apparitions', summary: 'Examining significant apparitions of Our Lady throughout history.', duration: '23:22', type: 'video' },
-			{ order: 6, title: 'Discussion Guide', summary: 'Study guide and discussion questions for deeper reflection.', type: 'reading' }
+			{ order: 1, title: 'Why Mary and Mariology?', summary: 'Understanding the importance and relevance of Marian studies.', duration: '13:53', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/kw8wxeguswr8jsb4ycqd8/Mariology-Course-1-bryan.mp4?rlkey=7kcxcar471v21waawoap7gw5o&st=dt7kk086&dl=0' },
+			{ order: 2, title: 'The Four Marian Dogmas', summary: 'Exploring Divine Motherhood, Perpetual Virginity, Immaculate Conception, and Assumption.', duration: '22:45', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/w1ov2os7mv32lo6sof0oo/Mariology-Course-2-bryan.mp4?rlkey=ubj3d7xjarmp37vvuvds0n3sh&st=bvkq1eyg&dl=0' },
+			{ order: 3, title: 'Is Mary Your Mother?', summary: 'Understanding Mary\'s maternal role in the spiritual life.', duration: '23:44', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/269l3laupiocm0mhn08x8/Mariology-Course-3-bryan.mp4?rlkey=gt846bwdn703lxpj2d0r815m9&st=oks2s9s0&dl=0' },
+			{ order: 4, title: 'The Three Great Marian Devotions', summary: 'Key devotional practices honoring the Mother of God.', duration: '24:24', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/4irwkkrztxd7v6zymic6a/Mariology-Course-4-bryan.mp4?rlkey=lzz9rig5nyd990bhkes7gksp5&st=lp1rrkd2&dl=0' },
+			{ order: 5, title: 'The Marian Apparitions', summary: 'Examining significant apparitions of Our Lady throughout history.', duration: '23:22', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/r82b3nmgjdq989lh8756k/Mariology-Course-5-bryan.mp4?rlkey=ilnilm584hotpec0wz8m5naps&st=cnsv2cax&dl=0' },
+			{ order: 6, title: 'Discussion Guide', summary: 'Study guide and discussion questions for deeper reflection.', type: 'reading', resourceUrl: '/courses/introduction-to-mariology/guide.pdf' }
 		],
 		presenterBio: `Dr. Mark Miravalle earned his Sacred Theological Doctorate from the Pontifical University of St. Thomas Aquinas in Rome. He holds the Saint John Paul II Chair of Mariology at Franciscan University and the Constance Schifflin-Blum Chair of Mariology at Ave Maria University. He founded and edits Ecce Mater Tua, an international Mariology research journal, and presides over the International Marian Association, a group of over 130 theologians, bishops, clergy, and laity promoting Marian devotion and doctrine. A renowned speaker on Mariology, he has addressed numerous episcopal conferences and assisted bishops with apparition investigations. 
 
@@ -216,10 +216,10 @@ Dr. Miravalle has authored/edited over 20 books on Mariology and Spiritual Theol
 
 Join Dr. Roger Nutt in his course, "Introduction to Sacramental Theology," as he unveils the significance of the seven sacraments and the integral role they play in the Catholic faith journey. Amidst societal skepticism, the sacraments stand as a profound source of truth and grace, enriching our spiritual lives. With Dr. Nutt's guidance, gain a deeper understanding of sacramental theology and discover how these revered rites can offer spiritual fulfillment and enrich your faith journey.`,
 		sections: [
-			{ order: 1, title: 'Salvation Through the Sacraments', summary: 'Understanding how the sacraments mediate God\'s saving grace.', duration: '28:13', type: 'video' },
-			{ order: 2, title: 'The Gift of Grace', summary: 'Exploring the nature and significance of sacramental grace.', duration: '25:14', type: 'video' },
-			{ order: 3, title: 'Living Our Faith', summary: 'Integrating sacramental life into daily Catholic practice.', duration: '20:01', type: 'video' },
-			{ order: 4, title: 'Outline and Further Reading', summary: 'Study guide and additional resources for deeper exploration.', type: 'reading' }
+			{ order: 1, title: 'Salvation Through the Sacraments', summary: 'Understanding how the sacraments mediate God\'s saving grace.', duration: '28:13', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/i68ha43yljrzbgl74c31t/RN-Course-1-Bryan-Rodriguez.mp4?rlkey=zbgi0k37a1nimhsat4dsk66gh&st=787vw853&dl=0' },
+			{ order: 2, title: 'The Gift of Grace', summary: 'Exploring the nature and significance of sacramental grace.', duration: '25:14', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/l4t5zl4my0fl52blhtsil/RN-Course-2-Bryan-Rodriguez.mp4?rlkey=01kcekz8bpvln0u70o622nmbu&st=4n99ivuz&dl=0' },
+			{ order: 3, title: 'Living Our Faith', summary: 'Integrating sacramental life into daily Catholic practice.', duration: '20:01', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/xgctrj01t7w413xys78ye/RN-Cours-3-Update-Bryan-Rodriguez.mp4?rlkey=ckyf709jeiuygak8dez92isi8&st=35fg9eci&dl=0' },
+			{ order: 4, title: 'Outline and Further Reading', summary: 'Study guide and additional resources for deeper exploration.', type: 'reading', resourceUrl: '/courses/introduction-to-sacramental-theology/guide.pdf' }
 		],
 		presenterBio: `Dr. Roger Nutt, S.T.L., S.T.D., is the provost and a professor of theology at Ave Maria University. He co-directs the Aquinas Center for Theological Renewal and is a member of the Academy of Catholic Theology. Dr. Nutt's research focuses on Christology and sacramental theology, particularly the theology of St. Thomas Aquinas. He has written three books and translated works, with publications in esteemed journals. Additionally, Dr. Nutt serves as a co-editor for multiple volumes, contributing to subjects such as Christian responses to death, Aquinas and Christology, Aquinas and the Greek Fathers, and Thomism and predestination.`,
 		presenterImage: '/images/RogerNuttBCam-Enhanced-SR.jpg'
@@ -241,12 +241,12 @@ Join Dr. Samuel Shephard as he explores the wonders of creation and our role as 
 
 Embark on this illuminating journey and appreciate the beauty and interconnectedness of the natural world, while learning to safeguard and cherish God's creation.`,
 		sections: [
-			{ order: 1, title: 'A History of Creation', summary: 'Understanding the origins and development of the natural world.', duration: '16:33', type: 'video' },
-			{ order: 2, title: 'Ecological Theory', summary: 'Exploring scientific and theological approaches to ecology.', duration: '15:36', type: 'video' },
-			{ order: 3, title: 'Why Should Catholics be Good Stewards of Creation?', summary: 'The Catholic foundation for environmental responsibility.', duration: '16:25', type: 'video' },
-			{ order: 4, title: 'Individual Responsibility', summary: 'Personal accountability in environmental stewardship.', duration: '11:09', type: 'video' },
-			{ order: 5, title: 'Everyday Stewardship', summary: 'Practical ways to care for creation in daily life.', duration: '14:54', type: 'video' },
-			{ order: 6, title: 'Outline and Additional Resources', summary: 'Study guide and supplementary materials for deeper exploration.', type: 'reading' }
+			{ order: 1, title: 'A History of Creation', summary: 'Understanding the origins and development of the natural world.', duration: '16:33', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/hv3xagesjjv0oqpx0dtes/Sam-Shephard-Course-1-Bryan-1.mp4?rlkey=0il13oj1boyme9g9zy63pofz2&st=h3ay9rh8&dl=0' },
+			{ order: 2, title: 'Ecological Theory', summary: 'Exploring scientific and theological approaches to ecology.', duration: '15:36', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/1iivgm3mkzfod4gqgn6fq/Sam-Shephard-Course-2-Bryan-1.m4a?rlkey=kr3psvsiut5pexzgg2crrb8gt&st=l9exi383&dl=0' },
+			{ order: 3, title: 'Why Should Catholics be Good Stewards of Creation?', summary: 'The Catholic foundation for environmental responsibility.', duration: '16:25', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/p7xkqxcynh489nkjk3wt3/Sam-Shephard-Course-3-Bryan-1.mp4?rlkey=ifm09a8fixkx8l62er3br0j3r&st=caht87ep&dl=0' },
+			{ order: 4, title: 'Individual Responsibility', summary: 'Personal accountability in environmental stewardship.', duration: '11:09', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/hsxu4wd8byv1o1towwk6t/Sam-Shephard-Course-4-Bryan-1.mp4?rlkey=d1vc8onhhi5nywawhh3h61jlt&st=2v5w58vv&dl=0' },
+			{ order: 5, title: 'Everyday Stewardship', summary: 'Practical ways to care for creation in daily life.', duration: '14:54', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/k6fo8segj95t2nldrmhxs/Sam-Shephard-Course-5-Bryan-1.mp4?rlkey=7z65jybn1xvo5t83xbqdgk1q6&st=g76bywkx&dl=0' },
+			{ order: 6, title: 'Outline and Additional Resources', summary: 'Study guide and supplementary materials for deeper exploration.', type: 'reading', resourceUrl: '/courses/stewarding-the-environment/guide.pdf' }
 		],
 		presenterBio: `Dr. Samuel Shephard, a biology professor at Ave Maria University, grew up in the Scottish Highlands and later worked as a commercial fisherman in Ireland, sparking his passion for fisheries science. He pursued graduate studies in the field and made significant contributions to the scientific community through his publications. More recently, he has focused on environmental stewardship and integrating sustainability with Catholic teachings. Outside of academia, he is happily married with seven children, embracing the joys of family life. Dr. Samuel Shephard embodies a spirit of scholarly exploration, merging faith and science to promote harmonious coexistence with nature.
 
@@ -267,13 +267,13 @@ Professional Webpage: <a href="https://www.samuelshephard.com" target="_blank" r
 
 Join Dr. McGuire (Sugrue) as she expertly guides you through this exploration of the U.S. Constitution, providing invaluable insight into America's enduring legacy.`,
 		sections: [
-			{ order: 1, title: 'The Ancient and the Founders', summary: '', duration: '14:28', type: 'video' },
-			{ order: 2, title: 'The Declaration of Independence and the U.S. Constitution', summary: '', duration: '15:50', type: 'video' },
-			{ order: 3, title: 'The Big Picture', summary: '', duration: '18:43', type: 'video' },
-			{ order: 4, title: 'The Bill of Rights', summary: '', duration: '17:28', type: 'video' },
-			{ order: 5, title: 'The 14th Amendment', summary: '', duration: '16:36', type: 'video' },
-			{ order: 6, title: 'The Constitution and The Supreme Court', summary: '', duration: '12:50', type: 'video' },
-			{ order: 7, title: 'Conclusion', summary: '', duration: '04:33', type: 'video' },
+			{ order: 1, title: 'The Ancient and the Founders', summary: '', duration: '14:28', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/8wlzjzytas3awv62m14y7/Course-1-Update-2-Bryan-Rodriguez.mp4?rlkey=mo2566hkxo8walbxy4cm6dar6&st=eycq4amn&dl=0' },
+			{ order: 2, title: 'The Declaration of Independence and the U.S. Constitution', summary: '', duration: '15:50', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/75w6ik61j2yotf7snsq9m/Course-2-Update-2-Bryan-Rodriguez.mp4?rlkey=gr3v45nb6m0xldmxbybciog41&st=i5sjn0bu&dl=0' },
+			{ order: 3, title: 'The Big Picture', summary: '', duration: '18:43', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/oogxxgi8l3mqjjuhyv6at/Course-3-Update-2-Bryan-Rodriguez.mp4?rlkey=kx6hp54st8tt691xw9umtynke&st=pxyoauic&dl=0' },
+			{ order: 4, title: 'The Bill of Rights', summary: '', duration: '17:28', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/xx6ukvkyst7z99ybcvfsc/Course-4-Update-2-Bryan-Rodriguez.mp4?rlkey=z4g7dv0bzjx8j2d3w4toi4sdu&st=nryfbwcs&dl=0' },
+			{ order: 5, title: 'The 14th Amendment', summary: '', duration: '16:36', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/imx2a6rk3s0p6ltpqgymg/Course-5-Update-2-Bryan-Rodriguez.mp4?rlkey=egy7p6cz04i879chidaobeoko&st=azuqj4eg&dl=0' },
+			{ order: 6, title: 'The Constitution and The Supreme Court', summary: '', duration: '12:50', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/cedzut0bnulsksvhj5u56/Course-6-Update-2-Bryan-Rodriguez.mp4?rlkey=33w0xcagceuk04i28x5gcb406&st=z90wd8bg&dl=0' },
+			{ order: 7, title: 'Conclusion', summary: '', duration: '04:33', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/h1fr0gv6yroxbb5x9axtb/Course-7-Update-2-Bryan-Rodriguez.mp4?rlkey=zbhsuj605i53p64434laun8q4&st=l6rpita5&dl=0' },
 			{ order: 8, title: 'Outline and Further Reading', summary: '', type: 'reading', resourceUrl: '/courses/foundation-of-america-us-constitution/guide.pdf' }
 		],
 		presenterBio: `Dr. Seana McGuire (Sugrue) is the Ambassador Michael Novak Chair of Politics at Ave Maria University and previously served as the associate director of the James Madison Program at Princeton University. With over two decades of experience, Dr. McGuire teaches constitutional law and civil liberties, specializing in separation of powers, religious liberty, marriage, civil society, and civil disobedience. As a highly regarded professor, her guidance and mentorship have aided many students in pursuing law and public service careers. She holds degrees from the University of Ottawa and McGill University and is also a proud mother of three talented young women.`,
@@ -318,12 +318,12 @@ Through this course, deepen your understanding of Chesterton by delving into his
 
 Discover the enchanting tale of "The Hobbit" and its wisdom on humanity's relationship with God. Pearce's illuminating course offers valuable insights into Tolkien's narratives, deepening your understanding of the human experience and our connection to the divine.`,
 		sections: [
-			{ order: 1, title: 'Who is Tolkien?', summary: '', duration: '20:48', type: 'video' },
-			{ order: 2, title: 'A MythUnderstood Man', summary: '', duration: '23:15', type: 'video' },
-			{ order: 3, title: 'The Hobbit as a Parable', summary: '', duration: '19:17', type: 'video' },
-			{ order: 4, title: 'Divine Comedy and Divine Epic', summary: '', duration: '19:03', type: 'video' },
-			{ order: 5, title: 'Finding Christ in the Lord of the Rings', summary: '', duration: '18:54', type: 'video' },
-			{ order: 6, title: 'Finding Ourselves in the Lord of the Rings', summary: '', duration: '23:03', type: 'video' },
+			{ order: 1, title: 'Who is Tolkien?', summary: '', duration: '20:48', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/sxdlxcoiqnr0blnyemhum/Joseph-Pearce-Tolkien-1-Bryan.mp4?rlkey=icgjpyfku0lc2l0vskdhh45m1&st=inc07xix&dl=0' },
+			{ order: 2, title: 'A MythUnderstood Man', summary: '', duration: '23:15', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/9yvhwmzbauphrlecksgpp/Joseph-Pearce-Tolkien-2-Bryan.mp4?rlkey=egc1oomdnz8d4vaxg48b5qr70&st=oyzp06pb&dl=0' },
+			{ order: 3, title: 'The Hobbit as a Parable', summary: '', duration: '19:17', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/uv3p2s22awcta0ykx0m3t/Joseph-Pearce-Tokien-3-Bryan.mp4?rlkey=u6d4s9jw9vz1gpf7vuvp0vxxl&st=bwadqkbr&dl=0' },
+			{ order: 4, title: 'Divine Comedy and Divine Epic', summary: '', duration: '19:03', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/m5mcrmenutuix4mmkqudg/Joseph-Pearce-Tolkien-4-Bryan.mp4?rlkey=m1jopz8clswtog5d7gwltqi36&st=yrlv15lq&dl=0' },
+			{ order: 5, title: 'Finding Christ in the Lord of the Rings', summary: '', duration: '18:54', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/ik68a5z5w8yrhnbuzxqa3/Joseph-Pearce-Tolkien-5-Bryan.mp4?rlkey=vxi9q61r9a7j4moa30qi5629d&st=lzu2kfys&dl=0' },
+			{ order: 6, title: 'Finding Ourselves in the Lord of the Rings', summary: '', duration: '23:03', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/qz5fpepnj1jz5v3sfi98v/Joseph-Pearce-Tolkien-6-Bryan.mp4?rlkey=vdqvmqhfo2m60u2f1uit9cmqz&st=nsg6go4r&dl=0' },
 			{ order: 7, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/genius-of-jrr-tolkien/guide.pdf' }
 		],
 		presenterBio: `Prof. Joseph Pearce is a visiting professor of literature and a renowned author with many internationally acclaimed bestsellers, including works such as "The Quest for Shakespeare," "Tolkien: Man and Myth," and "C.S. Lewis and the Catholic Church." His books have been translated into multiple languages, including Spanish, Portuguese, French, Dutch, Italian, Korean, Mandarin, Croatian, and Polish. Pearce is not only an accomplished author, but also a host of two 13-part television series covering Shakespeare on EWTN, as well as a writer and presenter of documentaries discussing Catholicism in "The Lord of the Rings" and "The Hobbit." His talents extend beyond literature, with his off-Broadway performance in the verse drama, "Death Comes for the War Poets," having received critical acclaim. Pearce is a frequent participant and lecturer at various literary events held in the United States, Canada, Britain, Europe, Africa, and South America. He is also the editor of the "St. Austin Review" and series editor of the Ignatius Critical Editions. Additionally, he is a senior instructor at Homeschool Connections and senior contributor at "Imaginative Conservative and Crisis Magazine."`,
@@ -343,9 +343,9 @@ Discover the enchanting tale of "The Hobbit" and its wisdom on humanity's relati
 
 Embark on a remarkable journey to gain invaluable insight into the importance of motherhood as a gateway to understanding our place in God's plan.`,
 		sections: [
-			{ order: 1, title: 'Motherhood as a Philosophy', summary: '', duration: '06:00', type: 'video' },
-			{ order: 2, title: 'Control, Commodification, and Careerism', summary: '', duration: '23:08', type: 'video' },
-			{ order: 3, title: 'The Theology of Motherhood', summary: '', duration: '11:54', type: 'video' },
+			{ order: 1, title: 'Motherhood as a Philosophy', summary: '', duration: '06:00', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/pxvx7x8ock6g6m61s6qof/Janice-Breidenbach-Course-1-bryan.mp4?rlkey=egzngwm2yp2zdia7ejg6n83nq&st=frh7gd0g&dl=0' },
+			{ order: 2, title: 'Control, Commodification, and Careerism', summary: '', duration: '23:08', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/a36g2kg8nt5ysjhvo5zgy/Janice-Breidenbach-Course-2-bryan.mp4?rlkey=frrc1l98u3y2rn2sg6e56nawt&st=j3nqm3uu&dl=0' },
+			{ order: 3, title: 'The Theology of Motherhood', summary: '', duration: '11:54', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/yh4k2oqa15yjsf3e45yc4/Janice-Breidenbach-Course-3-bryan.mp4?rlkey=dsck3kcnufzgdemd1hvi97mr2&st=oer2su7p&dl=0' },
 			{ order: 4, title: 'Outline and Additional Resources', summary: '', type: 'reading', resourceUrl: '/courses/philosophy-of-motherhood/guide.pdf' }
 		],
 		presenterBio: `Dr. Janice Chik Breidenbach is an associate professor of philosophy at Ave Maria University with research affiliations at Oxford and UPenn. She is working on a book entitled "How Many We Are: Assembly Among the Expressive Freedoms" and has published numerous articles on the topic. Dr. Breidenbach teaches and speaks on logic, metaphysics, aesthetics, ethics, human action, and the philosophy of motherhood. She holds degrees in philosophy, public policy, and music performance. Outside of work, Dr. Breidenbach enjoys homemaking, wine tasting, and playing music for her son, Paul Thomas.`,
@@ -409,15 +409,16 @@ Delve into this fascinating course and be inspired by Archbishop Fulton Sheen's 
 		professorDisplay: 'Dave Durand', 
 		title: 'The Virtues and Leadership in Business',
 		description: `Dive into "The Virtues and Leadership in Business" with Dave Durand, seasoned entrepreneur, acclaimed author, and trustee of Ave Maria University, as he unravels the essence of transformational leadership and its grounding in virtue. Having spearheaded Best Version Media to entrepreneurial success and recognized as Glassdoor's most admired CEO three times, Durand couples his extensive real-world experience with profound insights on developing leaders who shape culture and drive influence for the greater good. This course promises to equip aspiring and established leaders alike with the tools to foster exemplary leadership character and inspire a legacy of positive organizational change.`,
+		trailerUrl: 'https://www.dropbox.com/scl/fi/yntsrkpf9jfp9wt8ewdoi/Durand-Trailer.mp4?rlkey=75vjyt67t5vi2kbtehnfdha0p&st=i8od267g&dl=0',
 		sections: [
-			{ order: 1, title: 'What is Leadership?', summary: '', duration: '08:47', type: 'video' },
-			{ order: 2, title: 'Principles of Leadership', summary: '', duration: '09:22', type: 'video' },
-			{ order: 3, title: 'Leadership Superpowers', summary: '', duration: '14:39', type: 'video' },
-			{ order: 4, title: 'The Transcendentals', summary: '', duration: '11:17', type: 'video' },
-			{ order: 5, title: 'Building Expertise', summary: '', duration: '07:54', type: 'video' },
+			{ order: 1, title: 'What is Leadership?', summary: '', duration: '08:47', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/ghq8llca79yx681ulvk3n/Durand-Course-1-v2.mp4?rlkey=9w9c1bol3ahexr4dhvbbf60jp&st=pdscdizb&dl=0' },
+			{ order: 2, title: 'Principles of Leadership', summary: '', duration: '09:22', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/jyz2xuqfcrsnte20jvd47/Durand-Course-2-v2.mp4?rlkey=tff3464l39s0q833zsbyljkvn&st=q1w10yrp&dl=0' },
+			{ order: 3, title: 'Leadership Superpowers', summary: '', duration: '14:39', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/o570wset8u13zmuq141w6/Durand-Course-3-v2.mp4?rlkey=1b3bc8p9lnqvxadg9t4lbpwct&st=7ywmxzih&dl=0' },
+			{ order: 4, title: 'The Transcendentals', summary: '', duration: '11:17', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/evesn795aizmroj8nmuq3/Durand-Course-4-v2.mp4?rlkey=hoc8odp0f0noo594mp8ssh9l4&st=s5bwsvid&dl=0' },
+			{ order: 5, title: 'Building Expertise', summary: '', duration: '07:54', type: 'video', videoUrl: 'https://www.dropbox.com/scl/fi/7rqjxse69xl9y6xsrvh1m/Durand-Course-5-v2.mp4?rlkey=jsli4s1xiasxkr4z2wnk318tu&st=gmzey4sp&dl=0' },
 			{ order: 6, title: 'Establishing Culture', summary: '', duration: '07:30', type: 'video' },
 			{ order: 7, title: 'Conclusion', summary: '', duration: '03:16', type: 'video' },
-			{ order: 8, title: 'Discussion Guide', summary: '', type: 'reading' }
+			{ order: 8, title: 'Discussion Guide', summary: '', type: 'reading', resourceUrl: '/courses/virtues-and-leadership-in-business/guide.pdf' }
 		],
 		presenterBio: `A trustee of Ave Maria University, Dave Durand is a seasoned entrepreneur, acclaimed author of six books, and host of a popular radio/YouTube show. As co-founder and former CEO of Best VersionMedia, he now serves as Executive Chairman, having built and sold businesses with over a billion dollars in combined sales. He is also the CEO of Leading Giants, coaching leaders to enhance their influence and grow their businesses. A father of nine, Dave has been named Glassdoor's most admired CEO three times and was honored as Ernst & Young's Entrepreneur of the Year.`,
 		presenterImage: '/images/Durand-course.jpg'

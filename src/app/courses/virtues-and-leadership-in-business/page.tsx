@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getCourseBySlug } from '@/data/courses';
 import { notFound } from 'next/navigation';
 import LessonsList from '../[slug]/LessonsList';
+import DropboxVideo from '@/components/DropboxVideo';
 
 export default function VirtuesAndLeadershipInBusinessPage() {
 	const course = getCourseBySlug('virtues-and-leadership-in-business');
@@ -74,13 +75,23 @@ export default function VirtuesAndLeadershipInBusinessPage() {
 					}}
 				>
 					{/* Content container within the background */}
-					<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0 relative z-10">
+					<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-0 relative z-10">
 						{/* Video + Description Card */}
-						<div className="bg-white rounded-xl shadow-lg p-8 md:p-16 mb-24 relative overflow-hidden min-h-[600px] flex items-center justify-center">
+						<div className="bg-white rounded-xl shadow-lg p-6 md:p-12 mb-24 relative overflow-hidden">
 							{/* Subtle decorative compass on right side */}
 							<div className="hidden md:block absolute -right-10 top-1/2 -translate-y-1/2 opacity-[0.08] pointer-events-none select-none">
 								<div className="w-[520px] h-[520px] bg-[radial-gradient(circle_at_center,#C9972C33,transparent_70%)] rounded-full" />
 							</div>
+							{course.trailerUrl && (
+								<div className="relative z-10 max-w-4xl mx-auto">
+									<DropboxVideo
+										dropboxUrl={course.trailerUrl}
+										title={course.title}
+										thumbnailUrl={course.heroImage}
+										className="w-full aspect-video rounded-xl overflow-hidden"
+									/>
+								</div>
+							)}
 							{(() => {
 								// Normalize description for consistent layout
 								let desc = course.description || '';
@@ -88,9 +99,9 @@ export default function VirtuesAndLeadershipInBusinessPage() {
 									desc = desc.replace(new RegExp(`^${course.title}\\s*\n+`), '');
 								}
 								return (
-									<div className="relative z-10 max-w-5xl mx-auto space-y-6 text-center">
-										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight">{course.title}</h2>
-										{desc && <p className="text-gray-700 text-base leading-relaxed text-center">{desc}</p>}
+									<div className={`relative z-10 max-w-5xl mx-auto space-y-6 ${course.trailerUrl ? 'mt-10' : ''}`}>
+										<h2 className="font-crimson font-bold text-3xl md:text-4xl leading-tight text-center md:text-left">{course.title}</h2>
+										{desc && <p className="text-gray-700 text-base leading-relaxed whitespace-pre-line">{desc}</p>}
 										<div className="pt-2 text-center">
 											<Link href="#program" className="inline-block">
 												<button className="bg-pursuit-navy text-white hover:bg-pursuit-gold hover:text-white transition-colors px-10 py-4 rounded text-sm font-semibold tracking-wide shadow">DIVE INTO THE PROGRAM ▸</button>
